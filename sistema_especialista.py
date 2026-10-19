@@ -255,6 +255,16 @@ class ConsultorCarreiras(KnowledgeEngine):
         self.registrar("Gestão de Produtos", 2, "Planejamento e definição de prioridades aparecem juntos nas suas respostas.")
 
 
+    # Regra cruzada para um perfil voltado à computação em nuvem.
+    @Rule(Perfil(ferramenta="cloud", entrega="infra", ambiente="infraestrutura"))
+    def cloud_perfil_completo(self):
+        self.registrar(
+            "Computação em Nuvem",
+            2,
+            "Sua afinidade com ferramentas de nuvem combina com a "
+            "prioridade por infraestrutura estável e o interesse por "
+            "servidores ou nuvem."
+        )
 def diagnosticar(perfil):
     """Executa as regras e retorna a trilha mais bem pontuada e suas justificativas."""
     motor = ConsultorCarreiras()

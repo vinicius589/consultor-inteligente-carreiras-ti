@@ -22,7 +22,10 @@ class TestePersonas(unittest.TestCase):
             "Dados e pesquisa",
             "Alta",
         ))
-        self.assertEqual(resultado["carreira"], "Ciência de Dados e Machine Learning")
+        self.assertEqual(
+            resultado["carreira"],
+            "Ciência de Dados e Machine Learning",
+        )
 
     def test_perfil_seguranca(self):
         resultado = diagnosticar(perfil(
@@ -41,7 +44,10 @@ class TestePersonas(unittest.TestCase):
             "Desenvolvimento de software",
             "Baixa",
         ))
-        self.assertEqual(resultado["carreira"], "Desenvolvimento Front-end & UI/UX")
+        self.assertEqual(
+            resultado["carreira"],
+            "Desenvolvimento Front-end & UI/UX",
+        )
 
     def test_perfil_negocios(self):
         resultado = diagnosticar(perfil(
@@ -51,6 +57,21 @@ class TestePersonas(unittest.TestCase):
             "Negócios, usuários e planejamento",
         ))
         self.assertEqual(resultado["carreira"], "Gestão de Produtos")
+
+    def test_perfil_nuvem_regra_cruzada(self):
+        resultado = diagnosticar(perfil(
+            "Configurar servidores, redes e infraestrutura",
+            "Ferramentas de nuvem",
+            "Infraestrutura estável e automatizada",
+            "Infraestrutura, servidores ou nuvem",
+        ))
+
+        self.assertEqual(resultado["carreira"], "Computação em Nuvem")
+        self.assertEqual(resultado["pontuacao"], 11)
+        self.assertTrue(any(
+            "Sua afinidade com ferramentas de nuvem combina" in motivo
+            for motivo in resultado["motivos"]
+        ))
 
 
 if __name__ == "__main__":
