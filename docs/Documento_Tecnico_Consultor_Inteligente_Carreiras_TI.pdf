@@ -82,9 +82,9 @@ stream
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (2/6) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VISAO GERAL) Tj ET
 0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (1. Objetivo e funcionamento) Tj ET
-0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 694 Tm (O sistema faz perguntas sobre preferencias e interesses profissionais e recomenda uma trilha de carreira em Tecnologia da Informacao.) Tj ET
-0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 678 Tm (A recomendacao e produzida por regras SE-ENTAO implementadas com a biblioteca Experta. Cada regra ativada pode registrar pontos e) Tj ET
-0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 662 Tm (uma justificativa; no final, o sistema apresenta a carreira mais bem pontuada, a descricao, os motivos e alternativas.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 694 Tm (O sistema analisa cinco respostas para sugerir uma trilha profissional.                                                              ) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 678 Tm (As respostas acionam regras SE-ENTAO do Experta; cada regra pode somar pontos                                                    ) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 662 Tm (e registrar motivos; ao final, o sistema mostra carreira, pontuacao e alternativas.                                   ) Tj ET
 0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 626 Tm (Trilhas profissionais consideradas) Tj ET
 0.961 0.969 0.980 rg 45 591 244 25 re f
 0.890 0.906 0.929 RG 0.8 w 45 591 244 25 re S
