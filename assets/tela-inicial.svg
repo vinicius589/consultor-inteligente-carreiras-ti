@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1260" viewBox="0 0 1200 1260">
+<rect width="1200" height="1260" fill="#f0f2f6"/>
+<rect x="0" y="0" width="1200" height="58" fill="#ffffff"/>
+<circle cx="28" cy="29" r="8" fill="#ff4b4b"/><text x="50" y="36" font-family="Arial,sans-serif" font-size="18" fill="#333">Streamlit app · localhost:8501</text>
+<rect x="0" y="58" width="1200" height="1202" fill="#ffffff"/>
+<rect x="150" y="94" width="900" height="1100" rx="12" fill="#ffffff"/>
+<text x="195" y="145" font-family="Arial,sans-serif" font-size="18" fill="#555">PROJETO ACADÊMICO · UNIPAC BARBACENA</text>
+<text x="195" y="207" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#262730">🧭 Consultor Inteligente de</text>
+<text x="195" y="255" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#262730">Carreiras em TI</text>
+<text x="195" y="302" font-family="Arial,sans-serif" font-size="20" fill="#444">Responda às perguntas abaixo para receber uma sugestão de carreira.</text>
+<text x="195" y="330" font-family="Arial,sans-serif" font-size="20" fill="#444">O resultado é uma orientação inicial, não uma decisão definitiva.</text>
+<line x1="195" y1="365" x2="1005" y2="365" stroke="#ddd"/>
+<text x="195" y="407" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#262730">1. Como você avalia sua afinidade com matemática e estatística?</text>
+<rect x="195" y="426" width="250" height="48" rx="8" fill="#fff" stroke="#ccc"/><circle cx="220" cy="450" r="8" fill="#fff" stroke="#777" stroke-width="2"/><circle cx="220" cy="450" r="4" fill="#777"/><text x="242" y="457" font-family="Arial,sans-serif" font-size="18" fill="#333">Baixa</text>
+<rect x="462" y="426" width="250" height="48" rx="8" fill="#fff" stroke="#ccc"/><circle cx="487" cy="450" r="8" fill="#fff" stroke="#777" stroke-width="2"/><text x="509" y="457" font-family="Arial,sans-serif" font-size="18" fill="#333">Média</text>
+<rect x="729" y="426" width="250" height="48" rx="8" fill="#fff" stroke="#ccc"/><circle cx="754" cy="450" r="8" fill="#fff" stroke="#777" stroke-width="2"/><text x="776" y="457" font-family="Arial,sans-serif" font-size="18" fill="#333">Alta</text>
+<text x="195" y="527" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#262730">2. Qual atividade mais combina com você?</text>
+<rect x="195" y="544" width="810" height="52" rx="7" fill="#fff" stroke="#c6c6c6"/><text x="215" y="576" font-family="Arial,sans-serif" font-size="18" fill="#333">Criar interfaces e melhorar a experiência visual</text><path d="M969 565 l8 8 l8 -8" fill="none" stroke="#666" stroke-width="2"/>
+<text x="195" y="641" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#262730">3. Com qual linguagem ou ferramenta você tem mais afinidade atualmente?</text>
+<rect x="195" y="658" width="810" height="52" rx="7" fill="#fff" stroke="#c6c6c6"/><text x="215" y="690" font-family="Arial,sans-serif" font-size="18" fill="#333">Python</text><path d="M969 679 l8 8 l8 -8" fill="none" stroke="#666" stroke-width="2"/>
+<text x="195" y="755" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#262730">4. Que tipo de resultado você prefere entregar?</text>
+<rect x="195" y="772" width="810" height="52" rx="7" fill="#fff" stroke="#c6c6c6"/><text x="215" y="804" font-family="Arial,sans-serif" font-size="18" fill="#333">Um produto ou interface que a pessoa usa</text><path d="M969 793 l8 8 l8 -8" fill="none" stroke="#666" stroke-width="2"/>
+<text x="195" y="869" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#262730">5. Em qual ambiente você teria mais interesse em trabalhar?</text>
+<rect x="195" y="886" width="810" height="52" rx="7" fill="#fff" stroke="#c6c6c6"/><text x="215" y="918" font-family="Arial,sans-serif" font-size="18" fill="#333">Desenvolvimento de software</text><path d="M969 907 l8 8 l8 -8" fill="none" stroke="#666" stroke-width="2"/>
+<rect x="195" y="975" width="265" height="55" rx="8" fill="#ff4b4b"/><text x="327" y="1009" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff">Analisar meu perfil</text>
+<text x="195" y="1110" font-family="Arial,sans-serif" font-size="16" fill="#888">Projeto acadêmico — Inteligência Artificial — UNIPAC Barbacena</text>
+<text x="600" y="1230" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#7c7c7c">Prévia visual da interface — telas reais dependem da execução local do projeto</text>
+</svg>
