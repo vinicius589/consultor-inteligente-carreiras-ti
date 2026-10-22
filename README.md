@@ -1,14 +1,35 @@
-# Consultor Inteligente de Carreiras em TI
+# 🧭 Consultor Inteligente de Carreiras em TI
 
-Projeto acadêmico da disciplina de Inteligência Artificial da UNIPAC Barbacena, desenvolvido em Python com as bibliotecas Experta e Streamlit.
+Sistema especialista acadêmico desenvolvido em **Python** para a disciplina de Inteligência Artificial da **UNIPAC Barbacena**. A aplicação faz perguntas sobre interesses e preferências do usuário e recomenda uma trilha profissional em Tecnologia da Informação, explicando os motivos da indicação.
 
-## Objetivo
+**Tecnologias:** Python · Experta · Streamlit · unittest · Git/GitHub
 
-Desenvolver um sistema especialista baseado em regras lógicas que analisa as respostas do usuário e recomenda uma trilha de carreira na área de Tecnologia da Informação, apresentando justificativas para a recomendação.
+## 👀 Demonstração visual
 
-## Trilhas de carreira
+### Tela inicial
 
-O sistema considera dez áreas profissionais:
+A interface coleta cinco respostas: afinidade com matemática, atividade de maior interesse, ferramenta ou linguagem, tipo de resultado desejado e ambiente de trabalho.
+
+![Prévia da tela inicial do Consultor de Carreiras](assets/tela-inicial.svg)
+
+### Exemplo de resultado
+
+Neste exemplo, o perfil selecionado tem alta afinidade com matemática, gosta de analisar dados, escolhe Python, prefere produzir análises para apoiar decisões e se interessa por dados e pesquisa. Com essa combinação, as regras atuais recomendam **Ciência de Dados e Machine Learning**, com **8 pontos** e justificativas relacionadas às respostas.
+
+![Exemplo visual do resultado da análise](assets/exemplo-resultado.svg)
+
+> **Nota sobre as imagens:** as imagens acima são prévias visuais feitas a partir dos textos e do fluxo existentes no código; não são capturas de uma sessão real do navegador. O repositório não tem uma demonstração hospedada. Para ver a aplicação executando e testar suas próprias respostas, siga as etapas abaixo.
+
+## 💡 O que o sistema faz
+
+- Apresenta cinco perguntas sobre o perfil e os interesses profissionais.
+- Aplica regras lógicas implementadas com **Experta**.
+- Soma os pontos das regras ativadas para cada carreira.
+- Exibe uma trilha recomendada, sua descrição, as justificativas e a pontuação.
+- Permite consultar outras trilhas consideradas.
+- Inclui testes automatizados para verificar cenários de perfil.
+
+O motor de inferência contém **38 regras** (incluindo combinações de características do perfil) e considera dez trilhas profissionais:
 
 1. Desenvolvimento Back-end
 2. Desenvolvimento Front-end e UI/UX
@@ -21,50 +42,21 @@ O sistema considera dez áreas profissionais:
 9. Engenharia de Qualidade e Testes (QA)
 10. Gestão de Produtos
 
-## Como funciona
-
-A interface apresenta cinco perguntas relacionadas a:
-
-- Afinidade com matemática e estatística.
-- Atividades de maior interesse.
-- Linguagens de programação e ferramentas.
-- Tipo de resultado que o usuário prefere entregar.
-- Ambiente de trabalho de maior interesse.
-
-As respostas são analisadas por regras lógicas implementadas com a biblioteca Experta. Cada regra ativada pode acrescentar pontos a uma carreira e registrar uma justificativa.
-
-O projeto possui 38 regras, incluindo 20 regras cruzadas que combinam duas ou mais características do perfil.
-
-Ao final da análise, o sistema apresenta a trilha recomendada, sua descrição, os motivos da recomendação, a pontuação e outras opções consideradas.
-
-## Tecnologias utilizadas
-
-- **Python:** linguagem de programação utilizada no projeto.
-- **Experta:** biblioteca utilizada para implementar fatos, regras e o motor de inferência.
-- **Streamlit:** biblioteca utilizada para criar a interface web.
-- **Unittest:** ferramenta utilizada nos testes automatizados.
-- **Git e GitHub:** controle de versão e armazenamento do código-fonte.
-
-## Estrutura do projeto
-
-- `app.py`: interface da aplicação.
-- `sistema_especialista.py`: fatos, regras e motor de inferência.
-- `matriz_de_decisao.md`: resumo dos critérios de decisão.
-- `tests/test_personas.py`: testes automatizados dos perfis.
-- `requirements.txt`: dependências necessárias para executar o projeto.
-- `.gitignore`: arquivos e pastas que não devem ser versionados.
-
-## Como executar no Windows
+## ▶️ Como executar no Windows
 
 ### 1. Requisitos
 
-Tenha o Python instalado. A versão 3.10 é recomendada para favorecer a compatibilidade com a biblioteca Experta.
+- **Python 3.10** é a versão recomendada para favorecer a compatibilidade com a biblioteca Experta.
+- **Git** instalado no computador.
 
-O Git também é necessário para clonar o repositório.
+Para verificar as instalações, abra o PowerShell e execute:
+
+```powershell
+python --version
+git --version
+```
 
 ### 2. Baixar o projeto
-
-Abra o PowerShell e execute:
 
 ```powershell
 git clone https://github.com/vinicius589/consultor-inteligente-carreiras-ti.git
@@ -78,9 +70,11 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
+Se o PowerShell bloquear a ativação, você pode permitir scripts somente nessa sessão com `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` e tentar novamente. Outra opção é executar os comandos seguintes usando diretamente `.\.venv\Scripts\python.exe`.
+
 ### 4. Instalar as dependências
 
-Com o ambiente virtual ativado, execute:
+Com o ambiente virtual ativado:
 
 ```powershell
 python -m pip install --upgrade pip
@@ -89,42 +83,55 @@ python -m pip install -r requirements.txt
 
 ### 5. Iniciar a aplicação
 
-Execute:
-
 ```powershell
 python -m streamlit run app.py
 ```
 
-A aplicação poderá ser acessada pelo endereço local exibido no terminal, normalmente:
+O Streamlit informa no terminal o endereço local. Normalmente, é:
 
-http://localhost:8501
+**http://localhost:8501**
 
-Para encerrar a aplicação, pressione `Ctrl + C` no terminal em que ela está rodando.
+Abra esse endereço no navegador. Responda às cinco perguntas e clique em **Analisar meu perfil** para ver a recomendação e as justificativas.
 
-## Testes automatizados
+![Ilustração dos comandos para executar o projeto no Windows](assets/execucao-windows.svg)
 
-O projeto possui dez testes automatizados que verificam se diferentes perfis recebem as recomendações esperadas, abrangendo as dez trilhas de carreira.
+Para encerrar a aplicação, volte ao terminal e pressione `Ctrl + C`.
 
-Para executar os testes, utilize:
+## 🧪 Executar os testes
+
+Na pasta do projeto, com as dependências instaladas, execute:
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-Quando todas as verificações passam, o resultado final apresenta `OK`.
+Os testes estão em `tests/test_personas.py` e verificam perfis que representam as diferentes trilhas. Ao final, o `unittest` informa se as verificações passaram.
 
-## Matriz de decisão
+## 🧠 Como a recomendação é calculada
 
-O arquivo `matriz_de_decisao.md` apresenta um resumo das relações entre as atividades, ferramentas e resultados valorizados em cada trilha profissional.
+1. A interface reúne as respostas do usuário em um perfil.
+2. O motor de inferência compara esse perfil com as regras `SE–ENTÃO`.
+3. Cada regra ativada registra uma evidência com carreira, pontos e justificativa.
+4. O sistema soma as evidências e seleciona a carreira com maior pontuação.
+5. O resultado mostra a descrição, os motivos e algumas alternativas.
 
-A pontuação é calculada pelas regras cadastradas no motor de inferência. A recomendação é uma orientação inicial baseada nas respostas fornecidas pelo usuário.
+A indicação é uma **orientação inicial** baseada nas respostas, não uma avaliação definitiva nem uma garantia de adequação profissional.
 
-## Repositório no GitHub
+## 📁 Estrutura principal
 
-O código-fonte está disponível em:
+| Arquivo | Função |
+|---|---|
+| `app.py` | Interface web feita com Streamlit |
+| `sistema_especialista.py` | Fatos, regras e motor de inferência Experta |
+| `matriz_de_decisao.md` | Resumo dos critérios usados nas recomendações |
+| `tests/test_personas.py` | Testes automatizados de perfis |
+| `requirements.txt` | Dependências do projeto |
+| `assets/` | Imagens demonstrativas usadas neste README |
 
-https://github.com/vinicius589/consultor-inteligente-carreiras-ti
+## 🔗 Repositório
 
-## Observação
+Código-fonte: https://github.com/vinicius589/consultor-inteligente-carreiras-ti
 
-Este projeto tem finalidade acadêmica. As recomendações ajudam o usuário a explorar possibilidades profissionais na área de Tecnologia da Informação, mas não substituem pesquisa, experiência prática ou orientação profissional.
+---
+
+**Projeto acadêmico — Inteligência Artificial — UNIPAC Barbacena.**
