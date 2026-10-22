@@ -1,0 +1,360 @@
+%PDF-1.4
+%UNIPAC-TI
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 3412 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (1/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (DOCUMENTO T\311CNICO DO PROJETO) Tj ET
+0.722 0.365 0.125 rg BT /F2 10 Tf 1 0 0 1 45 716 Tm (PROJETO ACADEMICO - INTELIGENCIA ARTIFICIAL) Tj ET
+0.141 0.239 0.357 rg BT /F2 29 Tf 1 0 0 1 45 665 Tm (CONSULTOR INTELIGENTE) Tj ET
+0.141 0.239 0.357 rg BT /F2 29 Tf 1 0 0 1 45 628 Tm (DE CARREIRAS EM TI) Tj ET
+0.349 0.396 0.475 rg BT /F1 14 Tf 1 0 0 1 47 596 Tm (Documento tecnico do sistema especialista) Tj ET
+0.949 0.961 0.976 rg 45 455 505 105 re f
+0.847 0.878 0.918 RG 0.8 w 45 455 505 105 re S
+0.141 0.239 0.357 rg BT /F2 12 Tf 1 0 0 1 62 528 Tm (FINALIDADE) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 62 506 Tm (Descrever o objetivo, o funcionamento das regras, a arquitetura,) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 62 489 Tm (as tecnologias, os testes e as instrucoes de execucao do sistema.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 62 472 Tm (O documento distingue fatos do codigo de exemplos ilustrativos.) Tj ET
+0.141 0.239 0.357 rg BT /F2 12 Tf 1 0 0 1 45 415 Tm (IDENTIFICACAO DO PROJETO) Tj ET
+0.839 0.863 0.898 RG 0.7 w 45 402 m 550 402 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 379 Tm (Instituicao) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 379 Tm (UNIPAC Barbacena) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 371 m 550 371 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 349 Tm (Disciplina) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 349 Tm (Inteligencia Artificial) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 341 m 550 341 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 319 Tm (Projeto) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 319 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 311 m 550 311 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 289 Tm (Linguagem principal) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 289 Tm (Python) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 281 m 550 281 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 259 Tm (Bibliotecas centrais) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 259 Tm (Experta e Streamlit) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 251 m 550 251 l S
+0.349 0.396 0.475 rg BT /F2 9.5 Tf 1 0 0 1 47 229 Tm (Repositorio) Tj ET
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 177 229 Tm (github.com/vinicius589/consultor-inteligente-carreiras-ti) Tj ET
+0.929 0.941 0.957 RG 0.5 w 45 221 m 550 221 l S
+1.000 0.969 0.929 rg 45 145 505 65 re f
+0.941 0.831 0.714 RG 0.8 w 45 145 505 65 re S
+0.541 0.294 0.086 rg BT /F2 10.5 Tf 1 0 0 1 60 185 Tm (Sobre as evidencias visuais) Tj ET
+0.459 0.294 0.149 rg BT /F1 9.5 Tf 1 0 0 1 60 166 Tm (As telas deste documento sao pre-visualizacoes ilustrativas baseadas no codigo,) Tj ET
+0.459 0.294 0.149 rg BT /F1 9.5 Tf 1 0 0 1 60 152 Tm (nao capturas de uma execucao real do navegador.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 4292 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (2/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VISAO GERAL) Tj ET
+0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (1. Objetivo e funcionamento) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 694 Tm (O sistema faz perguntas sobre preferencias e interesses profissionais e recomenda uma trilha de carreira em Tecnologia da Informacao.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 678 Tm (A recomendacao e produzida por regras SE-ENTAO implementadas com a biblioteca Experta. Cada regra ativada pode registrar pontos e) Tj ET
+0.216 0.255 0.318 rg BT /F1 10.5 Tf 1 0 0 1 47 662 Tm (uma justificativa; no final, o sistema apresenta a carreira mais bem pontuada, a descricao, os motivos e alternativas.) Tj ET
+0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 626 Tm (Trilhas profissionais consideradas) Tj ET
+0.961 0.969 0.980 rg 45 591 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 45 591 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 55 599 Tm (1. Desenvolvimento Back-end) Tj ET
+0.961 0.969 0.980 rg 306 591 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 306 591 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 316 599 Tm (6. DevOps e SRE) Tj ET
+0.961 0.969 0.980 rg 45 558 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 45 558 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 55 566 Tm (2. Desenvolvimento Front-end e UI/UX) Tj ET
+0.961 0.969 0.980 rg 306 558 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 306 558 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 316 566 Tm (7. Computacao em Nuvem) Tj ET
+0.961 0.969 0.980 rg 45 525 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 45 525 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 55 533 Tm (3. Ciencia de Dados e Machine Learning) Tj ET
+0.961 0.969 0.980 rg 306 525 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 306 525 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 316 533 Tm (8. Desenvolvimento Mobile) Tj ET
+0.961 0.969 0.980 rg 45 492 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 45 492 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 55 500 Tm (4. Engenharia de Dados) Tj ET
+0.961 0.969 0.980 rg 306 492 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 306 492 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 316 500 Tm (9. Engenharia de Qualidade e Testes \(QA\)) Tj ET
+0.961 0.969 0.980 rg 45 459 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 45 459 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 55 467 Tm (5. Ciberseguranca) Tj ET
+0.961 0.969 0.980 rg 306 459 244 25 re f
+0.890 0.906 0.929 RG 0.8 w 306 459 244 25 re S
+0.149 0.212 0.290 rg BT /F1 9.5 Tf 1 0 0 1 316 467 Tm (10. Gestao de Produtos) Tj ET
+0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 417 Tm (As cinco perguntas do formulario) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 52 391 Tm (1. Afinidade com matematica e estatistica \(baixa, media ou alta\).) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 52 366 Tm (2. Atividade de maior interesse, como interfaces, dados, testes ou automacao.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 52 341 Tm (3. Linguagem ou ferramenta com que a pessoa tem mais afinidade.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 52 316 Tm (4. Tipo de resultado que prefere entregar.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 52 291 Tm (5. Ambiente profissional de maior interesse.) Tj ET
+0.918 0.945 0.973 rg 45 188 505 62 re f
+0.788 0.843 0.906 RG 0.8 w 45 188 505 62 re S
+0.141 0.239 0.357 rg BT /F2 10.5 Tf 1 0 0 1 60 224 Tm (Base logica) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 60 205 Tm (O README registra 38 regras, incluindo combinacoes cruzadas de caracteristicas.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 60 192 Tm (O resultado orienta a exploracao profissional; nao e uma decisao definitiva.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 3272 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (3/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (DEMONSTRACAO DA INTERFACE) Tj ET
+0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (2. Tela inicial da aplicacao) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 696 Tm (A aplicacao usa Streamlit e mostra cinco perguntas num formulario web.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 680 Tm (Abaixo esta uma pre-visualizacao montada com base nos campos de app.py.) Tj ET
+1.000 1.000 1.000 rg 50 132 495 520 re f
+0.835 0.859 0.898 RG 0.8 w 50 132 495 520 re S
+0.941 0.949 0.965 rg 50 622 495 30 re f
+0.835 0.859 0.898 RG 0.8 w 50 622 495 30 re S
+1.000 0.294 0.294 rg 64 633 7 7 re f
+0.294 0.333 0.388 rg BT /F1 8.5 Tf 1 0 0 1 82 632 Tm (Streamlit app - localhost:8501) Tj ET
+0.149 0.153 0.188 rg BT /F2 18 Tf 1 0 0 1 73 590 Tm (Consultor Inteligente de) Tj ET
+0.149 0.153 0.188 rg BT /F2 18 Tf 1 0 0 1 73 566 Tm (Carreiras em TI) Tj ET
+0.294 0.333 0.388 rg BT /F1 9.5 Tf 1 0 0 1 73 542 Tm (Responda as perguntas para receber uma sugestao de carreira.) Tj ET
+0.149 0.153 0.188 rg BT /F2 9.5 Tf 1 0 0 1 73 498 Tm (1. Afinidade com matematica e estatistica?) Tj ET
+1.000 1.000 1.000 rg 73 464 447 25 re f
+0.788 0.804 0.831 RG 0.8 w 73 464 447 25 re S
+0.267 0.267 0.267 rg BT /F1 8.5 Tf 1 0 0 1 84 473 Tm (Baixa        Media        Alta) Tj ET
+0.149 0.153 0.188 rg BT /F2 9.5 Tf 1 0 0 1 73 420 Tm (2. Qual atividade mais combina com voce?) Tj ET
+1.000 1.000 1.000 rg 73 386 447 25 re f
+0.788 0.804 0.831 RG 0.8 w 73 386 447 25 re S
+0.267 0.267 0.267 rg BT /F1 8.5 Tf 1 0 0 1 84 395 Tm (Criar interfaces e melhorar a experiencia visual) Tj ET
+0.149 0.153 0.188 rg BT /F2 9.5 Tf 1 0 0 1 73 342 Tm (3. Linguagem ou ferramenta de maior afinidade?) Tj ET
+1.000 1.000 1.000 rg 73 308 447 25 re f
+0.788 0.804 0.831 RG 0.8 w 73 308 447 25 re S
+0.267 0.267 0.267 rg BT /F1 8.5 Tf 1 0 0 1 84 317 Tm (Python) Tj ET
+0.149 0.153 0.188 rg BT /F2 9.5 Tf 1 0 0 1 73 264 Tm (4. Que tipo de resultado prefere entregar?) Tj ET
+1.000 1.000 1.000 rg 73 230 447 25 re f
+0.788 0.804 0.831 RG 0.8 w 73 230 447 25 re S
+0.267 0.267 0.267 rg BT /F1 8.5 Tf 1 0 0 1 84 239 Tm (Um produto ou interface que a pessoa usa) Tj ET
+0.149 0.153 0.188 rg BT /F2 9.5 Tf 1 0 0 1 73 186 Tm (5. Ambiente profissional de maior interesse?) Tj ET
+1.000 1.000 1.000 rg 73 152 447 25 re f
+0.788 0.804 0.831 RG 0.8 w 73 152 447 25 re S
+0.267 0.267 0.267 rg BT /F1 8.5 Tf 1 0 0 1 84 161 Tm (Desenvolvimento de software) Tj ET
+1.000 0.294 0.294 rg 73 151 168 29 re f
+1.000 1.000 1.000 rg BT /F2 9.5 Tf 1 0 0 1 94 161 Tm (Analisar meu perfil) Tj ET
+0.541 0.294 0.086 rg BT /F1 8.5 Tf 1 0 0 1 55 109 Tm (Previa ilustrativa; os valores mostrados nao representam uma sessao real.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 2965 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (4/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (EXEMPLO DE RECOMENDACAO) Tj ET
+0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (3. Exemplo de resultado) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 695 Tm (Exemplo de perfil para demonstrar a logica das regras implementadas no sistema.) Tj ET
+0.953 0.965 0.980 rg 45 629 505 48 re f
+0.847 0.878 0.918 RG 0.8 w 45 629 505 48 re S
+0.149 0.212 0.290 rg BT /F2 9.5 Tf 1 0 0 1 58 657 Tm (Atividade: testes | Ferramenta: ferramentas de teste) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 58 640 Tm (Entrega: software confiavel | Ambiente: testes e melhoria continua) Tj ET
+0.141 0.239 0.357 rg BT /F2 14 Tf 1 0 0 1 45 595 Tm (Resultado da analise) Tj ET
+0.875 0.953 0.894 rg 45 514 505 64 re f
+0.663 0.847 0.710 RG 0.8 w 45 514 505 64 re S
+0.090 0.420 0.208 rg BT /F2 15 Tf 1 0 0 1 60 552 Tm (Trilha recomendada: Engenharia de Qualidade e Testes \(QA\)) Tj ET
+0.141 0.353 0.208 rg BT /F1 10 Tf 1 0 0 1 60 531 Tm (Verificacao da qualidade de software, testes e prevencao de falhas.) Tj ET
+0.961 0.969 0.980 rg 45 458 505 38 re f
+0.882 0.898 0.922 RG 0.8 w 45 458 505 38 re S
+0.141 0.239 0.357 rg BT /F2 10 Tf 1 0 0 1 60 473 Tm (Pontuacao da recomendacao: 12 pontos) Tj ET
+0.141 0.239 0.357 rg BT /F2 12 Tf 1 0 0 1 45 426 Tm (Justificativas alinhadas as regras) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 53 397 Tm (- A preferencia por testar programas e encontrar defeitos adiciona 4 pontos.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 53 370 Tm (- A preferencia por software confiavel e sem defeitos adiciona 3 pontos.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 53 343 Tm (- Ferramentas de teste e ambiente de qualidade adicionam 3 pontos.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 53 316 Tm (- A combinacao dos tres sinais ativa uma regra cruzada que adiciona 2 pontos.) Tj ET
+1.000 0.969 0.929 rg 45 235 505 48 re f
+0.941 0.831 0.714 RG 0.8 w 45 235 505 48 re S
+0.541 0.294 0.086 rg BT /F2 9.5 Tf 1 0 0 1 59 264 Tm (Aviso) Tj ET
+0.459 0.294 0.149 rg BT /F1 9 Tf 1 0 0 1 59 246 Tm (Este resultado e um exemplo derivado das regras do codigo, nao uma saida) Tj ET
+0.459 0.294 0.149 rg BT /F1 9 Tf 1 0 0 1 59 234 Tm (capturada de uma execucao ao vivo da interface.) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 45 194 Tm (O resultado real muda conforme as respostas fornecidas pelo usuario.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 4269 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (5/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (ARQUITETURA E EXECUCAO) Tj ET
+0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (4. Arquitetura e tecnologias) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 695 Tm (A solucao separa a camada de interface do motor de inferencia.) Tj ET
+0.949 0.961 0.976 rg 45 605 110 55 re f
+0.796 0.835 0.882 RG 0.8 w 45 605 110 55 re S
+0.141 0.239 0.357 rg BT /F2 9.5 Tf 1 0 0 1 54 639 Tm (Usuario) Tj ET
+0.294 0.333 0.388 rg BT /F1 7.7 Tf 1 0 0 1 54 622 Tm (Responde perguntas) Tj ET
+0.949 0.961 0.976 rg 180 605 110 55 re f
+0.796 0.835 0.882 RG 0.8 w 180 605 110 55 re S
+0.141 0.239 0.357 rg BT /F2 9.5 Tf 1 0 0 1 189 639 Tm (app.py) Tj ET
+0.294 0.333 0.388 rg BT /F1 7.7 Tf 1 0 0 1 189 622 Tm (Interface Streamlit) Tj ET
+0.949 0.961 0.976 rg 315 605 110 55 re f
+0.796 0.835 0.882 RG 0.8 w 315 605 110 55 re S
+0.141 0.239 0.357 rg BT /F2 9.5 Tf 1 0 0 1 324 639 Tm (Experta) Tj ET
+0.294 0.333 0.388 rg BT /F1 7.7 Tf 1 0 0 1 324 622 Tm (Regras e fatos) Tj ET
+0.949 0.961 0.976 rg 450 605 100 55 re f
+0.796 0.835 0.882 RG 0.8 w 450 605 100 55 re S
+0.141 0.239 0.357 rg BT /F2 9.5 Tf 1 0 0 1 459 639 Tm (Resultado) Tj ET
+0.294 0.333 0.388 rg BT /F1 7.7 Tf 1 0 0 1 459 622 Tm (Pontos e motivos) Tj ET
+0.847 0.475 0.176 RG 1.4 w 155 632 m 180 632 l S
+0.847 0.475 0.176 RG 1.4 w 290 632 m 315 632 l S
+0.847 0.475 0.176 RG 1.4 w 425 632 m 450 632 l S
+0.141 0.239 0.357 rg BT /F2 9.5 Tf 1 0 0 1 45 571 Tm (Arquivos principais) Tj ET
+0.149 0.212 0.290 rg BT /F2 8.7 Tf 1 0 0 1 50 546 Tm (app.py) Tj ET
+0.216 0.255 0.318 rg BT /F1 8.7 Tf 1 0 0 1 195 546 Tm (Formulario, fluxo da interface e exibicao do resultado.) Tj ET
+0.910 0.925 0.945 RG 0.5 w 45 538 m 550 538 l S
+0.149 0.212 0.290 rg BT /F2 8.7 Tf 1 0 0 1 50 521 Tm (sistema_especialista.py) Tj ET
+0.216 0.255 0.318 rg BT /F1 8.7 Tf 1 0 0 1 195 521 Tm (Fatos, regras SE-ENTAO, pontuacao e justificativas.) Tj ET
+0.910 0.925 0.945 RG 0.5 w 45 513 m 550 513 l S
+0.149 0.212 0.290 rg BT /F2 8.7 Tf 1 0 0 1 50 496 Tm (matriz_de_decisao.md) Tj ET
+0.216 0.255 0.318 rg BT /F1 8.7 Tf 1 0 0 1 195 496 Tm (Resumo das relacoes entre respostas e trilhas.) Tj ET
+0.910 0.925 0.945 RG 0.5 w 45 488 m 550 488 l S
+0.149 0.212 0.290 rg BT /F2 8.7 Tf 1 0 0 1 50 471 Tm (tests/test_personas.py) Tj ET
+0.216 0.255 0.318 rg BT /F1 8.7 Tf 1 0 0 1 195 471 Tm (Testes automatizados para perfis representativos.) Tj ET
+0.910 0.925 0.945 RG 0.5 w 45 463 m 550 463 l S
+0.149 0.212 0.290 rg BT /F2 8.7 Tf 1 0 0 1 50 446 Tm (requirements.txt) Tj ET
+0.216 0.255 0.318 rg BT /F1 8.7 Tf 1 0 0 1 195 446 Tm (Dependencias que precisam ser instaladas.) Tj ET
+0.910 0.925 0.945 RG 0.5 w 45 438 m 550 438 l S
+0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 409 Tm (Como executar no Windows) Tj ET
+0.090 0.125 0.173 rg 45 219 505 169 re f
+0.090 0.125 0.173 RG 0.8 w 45 219 505 169 re S
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 364 Tm (git clone https://github.com/vinicius589/consultor-inteligente-carreiras-ti.git) Tj ET
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 341 Tm (cd consultor-inteligente-carreiras-ti) Tj ET
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 318 Tm (python -m venv .venv) Tj ET
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 295 Tm (.\\\\.venv\\\\Scripts\\\\Activate.ps1) Tj ET
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 272 Tm (python -m pip install -r requirements.txt) Tj ET
+0.898 0.929 0.969 rg BT /F1 8 Tf 1 0 0 1 58 249 Tm (python -m streamlit run app.py) Tj ET
+0.216 0.255 0.318 rg BT /F2 9.5 Tf 1 0 0 1 45 193 Tm (Depois, acesse http://localhost:8501 no navegador.) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 45 173 Tm (Python 3.10 e a versao recomendada no README para compatibilidade com Experta.) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 3426 >>
+stream
+1.000 1.000 1.000 rg 0 0 595 842 re f
+0.141 0.239 0.357 rg 45 789 26 26 re f
+1.000 1.000 1.000 rg BT /F2 12 Tf 1 0 0 1 51 796 Tm (U) Tj ET
+0.149 0.212 0.290 rg BT /F2 10 Tf 1 0 0 1 80 806 Tm (CENTRO UNIVERSITARIO PRESIDENTE ANTONIO CARLOS) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 80 792 Tm (UNIPAC BARBACENA) Tj ET
+0.847 0.475 0.176 RG 2.2 w 45 778 m 550 778 l S
+0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (6/6) Tj ET
+0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO E REFERENCIAS) Tj ET
+0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (5. Testes, limites e evidencias) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 694 Tm (O repositorio inclui testes automatizados baseados em personas para as trilhas profissionais.) Tj ET
+0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 678 Tm (A execucao deve ser confirmada no ambiente utilizado para a entrega.) Tj ET
+0.949 0.961 0.976 rg 45 613 505 42 re f
+0.847 0.878 0.918 RG 0.8 w 45 613 505 42 re S
+0.141 0.239 0.357 rg BT /F2 10 Tf 1 0 0 1 59 638 Tm (Comando para executar os testes) Tj ET
+0.216 0.255 0.318 rg BT /F1 9 Tf 1 0 0 1 59 621 Tm (python -m unittest discover -s tests -v) Tj ET
+0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 583 Tm (Verificacoes e cuidados) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.2 Tf 1 0 0 1 53 556 Tm (- O formulario coleta cinco respostas e so calcula a recomendacao apos o envio.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.2 Tf 1 0 0 1 53 528 Tm (- As pontuacoes sao produzidas pelas regras ativadas; nao representam avaliacao cientifica.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.2 Tf 1 0 0 1 53 500 Tm (- A recomendacao e orientativa e nao substitui pesquisa, experiencia ou aconselhamento.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.2 Tf 1 0 0 1 53 472 Tm (- As imagens demonstrativas do README e deste documento sao pre-visualizacoes ilustrativas.) Tj ET
+0.216 0.255 0.318 rg BT /F1 9.2 Tf 1 0 0 1 53 444 Tm (- Para comprovar o funcionamento visual, executar o programa e substituir as previas por capturas reais.) Tj ET
+0.141 0.239 0.357 rg BT /F2 13 Tf 1 0 0 1 45 399 Tm (Repositorios e documentacao) Tj ET
+0.349 0.396 0.475 rg BT /F2 9 Tf 1 0 0 1 48 372 Tm (Repositorio GitHub:) Tj ET
+0.141 0.353 0.604 rg BT /F1 9 Tf 1 0 0 1 48 354 Tm (https://github.com/vinicius589/consultor-inteligente-carreiras-ti) Tj ET
+0.349 0.396 0.475 rg BT /F2 9 Tf 1 0 0 1 48 328 Tm (README:) Tj ET
+0.216 0.255 0.318 rg BT /F1 9 Tf 1 0 0 1 48 310 Tm (Instrucoes de instalacao, exemplos e imagens demonstrativas.) Tj ET
+1.000 0.969 0.929 rg 45 207 505 72 re f
+0.941 0.831 0.714 RG 0.8 w 45 207 505 72 re S
+0.541 0.294 0.086 rg BT /F2 10.5 Tf 1 0 0 1 59 255 Tm (Nota sobre a versao documentada) Tj ET
+0.459 0.294 0.149 rg BT /F1 9.1 Tf 1 0 0 1 59 236 Tm (Este documento descreve os arquivos e regras revisados no repositorio em outubro de 2026.) Tj ET
+0.459 0.294 0.149 rg BT /F1 9.1 Tf 1 0 0 1 59 220 Tm (Antes da entrega academica, registrar os testes realmente executados e as evidencias) Tj ET
+0.459 0.294 0.149 rg BT /F1 9.1 Tf 1 0 0 1 59 206 Tm (reais obtidas pela equipe, sem apresentar itens planejados como implementados.) Tj ET
+0.349 0.396 0.475 rg BT /F1 9 Tf 1 0 0 1 45 160 Tm (Documento tecnico adaptado ao projeto de Inteligencia Artificial; nao reutiliza o conteudo da materia de jogos.) Tj ET
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000020 00000 n 
+0000000069 00000 n 
+0000000159 00000 n 
+0000000256 00000 n 
+0000000358 00000 n 
+0000000494 00000 n 
+0000003957 00000 n 
+0000004093 00000 n 
+0000008436 00000 n 
+0000008573 00000 n 
+0000011897 00000 n 
+0000012035 00000 n 
+0000015052 00000 n 
+0000015190 00000 n 
+0000019511 00000 n 
+0000019649 00000 n 
+trailer
+<< /Size 17 /Root 1 0 R >>
+startxref
+23127
+%%EOF
