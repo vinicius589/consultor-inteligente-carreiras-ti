@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060">
+<rect width="1100" height="1060" fill="#f0f2f6"/>
+<rect x="0" y="0" width="1100" height="56" fill="#fff"/>
+<circle cx="28" cy="28" r="7" fill="#ff4b4b"/><text x="48" y="35" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#343841">Consultor Inteligente de Carreiras em TI · resultado por persona</text>
+<rect x="75" y="82" width="950" height="925" rx="7" fill="#fff"/>
+<text x="120" y="130" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#262730">Resultado da análise — Perfil analítico</text>
+<text x="120" y="168" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#4b5563">Perfil testado a partir das entradas definidas em tests/test_personas.py</text>
+<rect x="120" y="195" width="860" height="160" rx="7" fill="#f7f8fa" stroke="#dfe3e8"/>
+<text x="142" y="229" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#262730">Entradas da persona</text>
+<text x="142" y="260" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Matemática: Alta</text>
+<text x="142" y="282" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Atividade: Analisar dados e encontrar padrões</text>
+<text x="142" y="304" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Ferramenta: Python</text>
+<text x="142" y="326" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Entrega: Informações e análises que ajudam a decidir</text>
+<text x="142" y="348" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Ambiente: Dados e pesquisa</text>
+<text x="120" y="405" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#262730">Resultado da análise</text>
+<rect x="120" y="428" width="860" height="78" rx="8" fill="#dff3e4" stroke="#a9d8b5"/>
+<text x="142" y="463" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#176b35">Trilha recomendada: Ciência de Dados e Machine Learning</text>
+<text x="142" y="490" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#245a35">Análise estatística, exploração de dados e criação de modelos preditivos.</text>
+<text x="120" y="545" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#262730">Por que essa trilha foi recomendada?</text>
+<circle cx="132" cy="574" r="4" fill="#4b5563"/>
+<text x="149" y="578" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Você gosta de analisar dados e tem alta afinidade com matemática.</text>
+<circle cx="132" cy="601" r="4" fill="#4b5563"/>
+<text x="149" y="605" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">Você prefere entregar análises que apoiam decisões.</text>
+<circle cx="132" cy="628" r="4" fill="#4b5563"/>
+<text x="149" y="632" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#343841">A combinação de análise, matemática e Python reforça o perfil analítico.</text>
+<rect x="120" y="684" width="860" height="54" rx="7" fill="#f5f7fa" stroke="#dce1e8"/>
+<text x="142" y="716" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#303744">Pontuação da recomendação: 8 pontos</text>
+<rect x="120" y="754" width="860" height="110" rx="7" fill="#fff" stroke="#dfe3e8"/>
+<rect x="120" y="754" width="860" height="32" rx="7" fill="#f7f8fa"/>
+<text x="142" y="775" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#343841">Outras trilhas consideradas</text>
+<text x="142" y="808" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Cibersegurança</text>
+<text x="948" y="808" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
+<text x="142" y="829" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Computação em Nuvem</text>
+<text x="948" y="829" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
+<text x="142" y="850" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Desenvolvimento Back-end</text>
+<text x="948" y="850" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
+<text x="120" y="970" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#8a5d25">Prévia visual baseada nos testes e regras do repositório; não é captura nativa de uma sessão real do Streamlit.</text>
+</svg>
