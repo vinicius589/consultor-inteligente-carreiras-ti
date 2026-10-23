@@ -369,7 +369,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /ImHeader 17 0 R /ImFooter 18 0 R >> /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 20 0 R >>
 endobj
 20 0 obj
-<< /Length 4241 >>
+<< /Length 4240 >>
 stream
 1.000 1.000 1.000 rg 0 0 595 842 re f
 q 41 0 0 48 45 781 cm /ImHeader Do Q
@@ -379,7 +379,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (5/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (7/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.2. Perfil de infraestrutura e seguranca) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_seguranca em tests/test_personas.py.) Tj ET
@@ -431,7 +431,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /ImHeader 17 0 R /ImFooter 18 0 R >> /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 22 0 R >>
 endobj
 22 0 obj
-<< /Length 4164 >>
+<< /Length 4163 >>
 stream
 1.000 1.000 1.000 rg 0 0 595 842 re f
 q 41 0 0 48 45 781 cm /ImHeader Do Q
@@ -441,7 +441,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (6/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (8/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.3. Perfil visual / front-end) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_visual em tests/test_personas.py.) Tj ET
@@ -492,7 +492,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /ImHeader 17 0 R /ImFooter 18 0 R >> /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R >>
 endobj
 24 0 obj
-<< /Length 4327 >>
+<< /Length 4326 >>
 stream
 1.000 1.000 1.000 rg 0 0 595 842 re f
 q 41 0 0 48 45 781 cm /ImHeader Do Q
@@ -502,7 +502,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (7/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (9/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.4. Perfil de negocios / produto) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_negocios em tests/test_personas.py.) Tj ET
