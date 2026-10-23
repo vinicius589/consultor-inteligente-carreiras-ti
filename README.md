@@ -6,7 +6,7 @@ Sistema especialista acadêmico desenvolvido em **Python** para a disciplina de 
 
 ## 📄 Documento técnico
 
-O repositório também inclui o [Documento Técnico do Consultor Inteligente de Carreiras em TI (PDF)](docs/Documento_Tecnico_Consultor_Inteligente_Carreiras_TI.pdf), com visão geral, arquitetura, funcionamento das regras, exemplo de recomendação, imagens ilustrativas da interface, instruções de execução e testes.
+O repositório também inclui o [Documento Técnico do Consultor Inteligente de Carreiras em TI (PDF)](docs/Documento_Tecnico_Consultor_Inteligente_Carreiras_TI.pdf), com visão geral, arquitetura, funcionamento das regras, quatro validações por personas (analítico, infraestrutura/segurança, front-end e negócios/produto), exemplos visuais de resultados, instruções de execução e testes.
 
 ## 👀 Demonstração visual
 
