@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 19 0 R 21 0 R 23 0 R] /Count 9 >>
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 19 0 R 21 0 R 23 0 R 13 0 R 15 0 R] /Count 9 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
@@ -258,7 +258,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (5/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (8/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (ARQUITETURA E EXECUCAO) Tj ET
 0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (4. Arquitetura e tecnologias) Tj ET
 0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 695 Tm (A solucao separa a camada de interface do motor de inferencia.) Tj ET
@@ -324,7 +324,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (6/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (9/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO E REFERENCIAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 21 Tf 1 0 0 1 45 722 Tm (5. Testes, limites e evidencias) Tj ET
 0.216 0.255 0.318 rg BT /F1 10 Tf 1 0 0 1 47 694 Tm (O repositorio inclui testes automatizados baseados em personas para as trilhas profissionais.) Tj ET
@@ -379,7 +379,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (7/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (5/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.2. Perfil de infraestrutura e seguranca) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_seguranca em tests/test_personas.py.) Tj ET
@@ -441,7 +441,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (8/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (6/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.3. Perfil visual / front-end) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_visual em tests/test_personas.py.) Tj ET
@@ -502,7 +502,7 @@ q 41 0 0 48 45 781 cm /ImHeader Do Q
 0.851 0.871 0.902 RG 0.7 w 45 48 m 550 48 l S
 0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 45 29 Tm (Consultor Inteligente de Carreiras em TI) Tj ET
 q 100 0 0 27 450 12 cm /ImFooter Do Q
-0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (9/9) Tj ET
+0.420 0.447 0.502 rg BT /F1 8 Tf 1 0 0 1 522 29 Tm (7/9) Tj ET
 0.722 0.365 0.125 rg BT /F2 8 Tf 1 0 0 1 45 756 Tm (VALIDACAO POR PERSONAS) Tj ET
 0.141 0.239 0.357 rg BT /F2 19 Tf 1 0 0 1 45 722 Tm (5.4. Perfil de negocios / produto) Tj ET
 0.216 0.255 0.318 rg BT /F1 9.5 Tf 1 0 0 1 47 696 Tm (Caso correspondente ao teste test_perfil_negocios em tests/test_personas.py.) Tj ET
