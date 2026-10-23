@@ -30,11 +30,11 @@
 <rect x="120" y="757" width="860" height="110" rx="7" fill="#fff" stroke="#dfe3e8"/>
 <rect x="120" y="757" width="860" height="32" rx="7" fill="#f7f8fa"/>
 <text x="142" y="778" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#343841">Outras trilhas consideradas</text>
-<text x="142" y="811" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Cibersegurança</text>
-<text x="948" y="811" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
-<text x="142" y="832" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Ciência de Dados e Machine Learning</text>
+<text x="142" y="811" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Desenvolvimento Front-end &amp; UI/UX</text>
+<text x="948" y="811" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">2 ponto(s)</text>
+<text x="142" y="832" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Cibersegurança</text>
 <text x="948" y="832" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
-<text x="142" y="853" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Computação em Nuvem</text>
+<text x="142" y="853" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">Ciência de Dados e Machine Learning</text>
 <text x="948" y="853" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#343841">0 ponto(s)</text>
 <text x="120" y="970" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#8a5d25">Prévia visual baseada nos testes e regras do repositório; não é captura nativa de uma sessão real do Streamlit.</text>
 </svg>
