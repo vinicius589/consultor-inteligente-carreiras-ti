@@ -16,13 +16,40 @@ A interface coleta cinco respostas: afinidade com matemática, atividade de maio
 
 ![Prévia da tela inicial do Consultor de Carreiras](assets/tela-inicial.svg)
 
-### Exemplo de resultado
+## 🧪 Validação com quatro personas
 
-Neste exemplo, o perfil selecionado tem alta afinidade com matemática, gosta de analisar dados, escolhe Python, prefere produzir análises para apoiar decisões e se interessa por dados e pesquisa. Com essa combinação, as regras atuais recomendam **Ciência de Dados e Machine Learning**, com **8 pontos** e justificativas relacionadas às respostas.
+A Atividade Aula 08 pede a validação com pelo menos quatro perfis distintos. O repositório tem testes em `tests/test_personas.py` para estes cenários, cujas respostas esperadas são conferidas pelo código de teste.
 
-![Exemplo visual do resultado da análise](assets/exemplo-resultado.svg)
+### 1. Perfil analítico — Ciência de Dados e Machine Learning
 
-> **Nota sobre as imagens:** as imagens acima são prévias visuais feitas a partir dos textos e do fluxo existentes no código; não são capturas de uma sessão real do navegador. O repositório não tem uma demonstração hospedada. Para ver a aplicação executando e testar suas próprias respostas, siga as etapas abaixo.
+- **Entradas:** matemática alta, análise de dados, Python, análises para apoiar decisões e interesse por dados e pesquisa.
+- **Resultado esperado:** Ciência de Dados e Machine Learning — **8 pontos**.
+
+![Resultado ilustrativo da persona analítica](assets/persona-analitica.svg)
+
+### 2. Perfil de infraestrutura e segurança — Cibersegurança
+
+- **Entradas:** matemática média, investigação de riscos e vulnerabilidades, Linux e redes, proteção contra ameaças e ambiente de segurança.
+- **Resultado esperado:** Cibersegurança — **10 pontos**.
+
+![Resultado ilustrativo da persona de infraestrutura e segurança](assets/persona-infra-seguranca.svg)
+
+### 3. Perfil visual/front-end — Desenvolvimento Front-end e UI/UX
+
+- **Entradas:** matemática baixa, criação de interfaces, JavaScript, produto/interface para o usuário e desenvolvimento de software.
+- **Resultado esperado:** Desenvolvimento Front-end & UI/UX — **6 pontos**.
+
+![Resultado ilustrativo da persona visual e front-end](assets/persona-visual-frontend.svg)
+
+### 4. Perfil de negócios/produto — Gestão de Produtos
+
+- **Entradas:** planejamento de produtos, ferramentas de design e prototipação, priorização e interesse por negócio e usuários.
+- **Resultado esperado:** Gestão de Produtos — **11 pontos**.
+
+![Resultado ilustrativo da persona de negócios e produto](assets/persona-negocios-produto.svg)
+
+> **Nota sobre as imagens:** estas são visualizações demonstrativas montadas a partir das entradas dos testes existentes e das justificativas/regras no código. Não são capturas nativas de uma execução real do Streamlit. Para anexar evidência de execução real, abra a aplicação localmente, execute cada perfil e tire os prints do navegador.
+
 
 ## 💡 O que o sistema faz
 
