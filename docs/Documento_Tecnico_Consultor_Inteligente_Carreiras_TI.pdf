@@ -492,7 +492,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /ImHeader 17 0 R /ImFooter 18 0 R >> /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R >>
 endobj
 24 0 obj
-<< /Length 4326 >>
+<< /Length 4340 >>
 stream
 1.000 1.000 1.000 rg 0 0 595 842 re f
 q 41 0 0 48 45 781 cm /ImHeader Do Q
@@ -538,11 +538,11 @@ q 100 0 0 27 450 12 cm /ImFooter Do Q
 0.867 0.890 0.922 RG 0.8 w 45 207 505 65 re S
 0.969 0.973 0.980 rg 45 248 505 24 re f
 0.204 0.220 0.255 rg BT /F2 8.3 Tf 1 0 0 1 58 256 Tm (Outras trilhas consideradas) Tj ET
-0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 235 Tm (Ciberseguranca) Tj ET
-0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 493 235 Tm (0 ponto\(s\)) Tj ET
-0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 221 Tm (Ciencia de Dados e Machine Learning) Tj ET
+0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 235 Tm (Desenvolvimento Front-end & UI/UX) Tj ET
+0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 493 235 Tm (2 ponto\(s\)) Tj ET
+0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 221 Tm (Ciberseguranca) Tj ET
 0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 493 221 Tm (0 ponto\(s\)) Tj ET
-0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 207 Tm (Computacao em Nuvem) Tj ET
+0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 58 207 Tm (Ciencia de Dados e Machine Learning) Tj ET
 0.204 0.220 0.255 rg BT /F1 8 Tf 1 0 0 1 493 207 Tm (0 ponto\(s\)) Tj ET
 1.000 0.969 0.910 rg 45 130 505 48 re f
 0.941 0.843 0.655 RG 0.8 w 45 130 505 48 re S
@@ -580,5 +580,5 @@ xref
 trailer
 << /Size 25 /Root 1 0 R >>
 startxref
-49188
+49202
 %%EOF
