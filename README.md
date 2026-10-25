@@ -42,8 +42,8 @@ lateral ou acrescente `?perfil=perfil_devops` à URL.
 python -m pytest
 ```
 
-São **55 testes** (motor, lacunas, roadmap, base de conhecimento, casos-limite, relatório e o
-wizard completo pela interface).
+São **50 testes** (motor, lacunas, roadmap, base de conhecimento, casos-limite e o wizard
+completo pela interface).
 
 ## Prints dos testes
 
@@ -63,9 +63,7 @@ src/consultor/
   motor.py                  pontuação ponderada, certeza, penalidades e ranking
   lacunas.py                análise de lacunas por senioridade
   roadmap.py                fases, certificações e portfólio
-  relatorio.py              exportação em Markdown e JSON
-  servico.py                execução completa de um perfil
-tests/                      55 testes automatizados
+tests/                      50 testes automatizados
 exemplos/                   perfis usados nos testes manuais
 docs/prints/                prints dos testes
 TESTES.md                   relatório dos testes manuais

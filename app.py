@@ -29,7 +29,6 @@ from consultor.base_conhecimento import (  # noqa: E402
     base_padrao,
 )
 from consultor.motor import Resultado, avaliar  # noqa: E402
-from consultor.relatorio import gerar_json, gerar_markdown  # noqa: E402
 from consultor.roadmap import PlanoAcao, gerar_plano  # noqa: E402
 
 COR_PRIMARIA = "#4338ca"
@@ -562,11 +561,7 @@ def painel_resultado(base: BaseConhecimento) -> None:
     col1.metric("Aderência da 1ª trilha", pct(top.percentual))
     col2.metric("2ª opção", pct(segundo.percentual))
     col3.metric("Confiança", ROTULO_CONFIANCA.get(resultado.nivel_confianca, resultado.nivel_confianca))
-    estabilidade = resultado.sensibilidade.get("estabilidade")
-    detalhe = f"1ª: {top.nome} · 2ª: {segundo.nome} · índice de confiança {num(resultado.confianca)}"
-    if estabilidade is not None:
-        detalhe += f" · estabilidade {estabilidade * 100:.0f}% em variações de ±1 ponto"
-    st.caption(detalhe)
+    st.caption(f"1ª: {top.nome} · 2ª: {segundo.nome} · índice de confiança {num(resultado.confianca)}")
 
     if resultado.empate:
         st.warning(f"**Empate técnico.** {resultado.mensagem_confianca}")
@@ -580,8 +575,8 @@ def painel_resultado(base: BaseConhecimento) -> None:
 
     st.divider()
 
-    aba_panorama, aba_justificativas, aba_lacunas, aba_roadmap, aba_exportar = st.tabs(
-        ["📊 Panorama", "🔍 Justificativas", "🧩 Lacunas", "🗺️ Roadmap", "⬇️ Exportar"]
+    aba_panorama, aba_justificativas, aba_lacunas, aba_roadmap = st.tabs(
+        ["📊 Panorama", "🔍 Justificativas", "🧩 Lacunas", "🗺️ Roadmap"]
     )
 
     with aba_panorama:
@@ -677,25 +672,6 @@ def painel_resultado(base: BaseConhecimento) -> None:
         if plano is None:
             st.info("Plano indisponível.")
         else:
-            opcoes = {t.id: t.nome for t in resultado.ranking}
-            with st.expander("Explorar o plano de outra trilha"):
-                escolhida = st.selectbox(
-                    "Trilha",
-                    list(opcoes),
-                    index=list(opcoes).index(resultado.top.id),
-                    format_func=lambda tid: opcoes[tid],
-                    key="explorar_trilha",
-                )
-                if escolhida != plano.trilha_id:
-                    plano = gerar_plano(
-                        base,
-                        escolhida,
-                        perfil.get("conhecimentos", {}),
-                        nivel_alvo=valor_campo(base, "nivel_alvo"),
-                        horas_semana=int(valor_campo(base, "horas_semana") or 10),
-                        prazo_meses=int(valor_campo(base, "prazo") or 6),
-                    )
-
             st.markdown(f"### {plano.trilha_nome}")
             st.write(plano.resumo)
             if plano.alerta_prazo:
@@ -742,32 +718,6 @@ def painel_resultado(base: BaseConhecimento) -> None:
             st.markdown("**Próximos passos**")
             for indice, passo in enumerate(plano.proximos_passos, start=1):
                 st.markdown(f"{indice}. {passo}")
-
-    with aba_exportar:
-        plano = st.session_state.get("plano")
-        if plano is not None:
-            markdown = gerar_markdown(resultado, plano, base, perfil)
-            dados = gerar_json(resultado, plano, perfil)
-            col_md, col_json = st.columns(2)
-            with col_md:
-                st.download_button(
-                    "Baixar plano em Markdown",
-                    data=markdown.encode("utf-8"),
-                    file_name="plano-carreira-ti.md",
-                    mime="text/markdown",
-                    width="stretch",
-                )
-            with col_json:
-                st.download_button(
-                    "Baixar resultado em JSON",
-                    data=json.dumps(dados, ensure_ascii=False, indent=2).encode("utf-8"),
-                    file_name="resultado-consultor-carreiras.json",
-                    mime="application/json",
-                    width="stretch",
-                )
-            with st.expander("Pré-visualizar o relatório"):
-                st.markdown(markdown)
-
 
 # ------------------------------------------------------------------------ main
 

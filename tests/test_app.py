@@ -79,7 +79,6 @@ def test_wizard_completo_gera_resultado():
     assert "Ranking de compatibilidade" in textos
     assert resultado.top.nome in textos
     assert len(at.metric) >= 4
-    assert any("Baixar plano em Markdown" in d.label for d in at.get("download_button"))
 
 
 def test_botao_recomecar_volta_ao_inicio():
