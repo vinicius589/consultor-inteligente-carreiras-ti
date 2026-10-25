@@ -89,7 +89,8 @@ def test_botao_recomecar_volta_ao_inicio():
     at.run()
     _botao(at, "Continuar para as afinidades").click().run()
     assert at.session_state["etapa"] == 1
-    at.sidebar.button[0].click().run()
+    recomecar = [b for b in at.sidebar.button if b.label == "Recomeçar"][0]
+    recomecar.click().run()
     assert not at.exception, at.exception
     assert any("Passo 1" in s.value for s in at.subheader)
 

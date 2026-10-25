@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 
 from consultor.base_conhecimento import base_padrao
-from consultor.cli import executar
+from consultor.servico import executar
 from consultor.relatorio import gerar_json, gerar_markdown
 
 EXEMPLOS = Path(__file__).resolve().parents[1] / "exemplos"

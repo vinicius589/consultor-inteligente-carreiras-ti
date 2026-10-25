@@ -1,194 +1,90 @@
-﻿# 🧭 Consultor Inteligente de Carreiras em TI
+# 🧭 Consultor Inteligente de Carreiras em TI
 
-**Sistema especialista com raciocínio ponderado, tratamento de incerteza e plano de carreira personalizado.**
+Sistema especialista em **Python** que indica a trilha de tecnologia mais compatível com o perfil do
+estudante, mostra as **lacunas de competência** e monta um **plano de estudos** com certificações e
+projetos de portfólio.
 
-Projeto acadêmico da disciplina de **Inteligência Artificial — UNIPAC Barbacena**.
-A aplicação analisa o perfil do estudante em 17 perguntas de afinidade (escala 1–5), compara com **10 trilhas
-de tecnologia**, calcula um ranking percentual, identifica **lacunas de competência** e monta um **roadmap**
-com recursos gratuitos, certificações e projetos de portfólio.
+Trabalho da disciplina de **Inteligência Artificial — UNIPAC Barbacena**.
 
-`Python 3.10+` · `Streamlit` · `Plotly` · `pytest` · base de conhecimento 100% em JSON
+## O que o sistema faz
 
----
+- Questionário em 3 etapas: perfil pessoal, **17 afinidades técnicas em escala 1–5** e objetivos.
+- Compara o perfil com **10 trilhas** (Back-end, Front-end/UX, Dados/ML, Engenharia de Dados,
+  Cibersegurança, DevOps/SRE, Cloud, Mobile, QA e Produto).
+- Calcula **pontuação ponderada com fatores de certeza** e mostra o ranking com percentual de
+  aderência (Top 3 + as 10 trilhas).
+- Aplica **penalidades** para perfis contraditórios e detecta **empate técnico**.
+- Compara o conhecimento atual com o nível escolhido (estágio, júnior ou pleno) e lista as
+  **lacunas**, com prioridade e horas estimadas.
+- Gera o **roadmap** em 3 fases, com links gratuitos, certificações e projetos para o GitHub.
 
-## 🎯 O que o sistema faz
-
-| Etapa | Resultado |
-|---|---|
-| **Perfil em 3 passos** | dados pessoais, 17 afinidades técnicas, objetivos e conhecimentos atuais |
-| **Ranking ponderado** | Top 3 com percentual de aderência + ranking completo das 10 trilhas |
-| **Tratamento de incerteza** | fatores de certeza (MYCIN), penalidades para perfis contraditórios, bônus para combinações coerentes |
-| **Empate técnico** | quando as duas primeiras ficam a menos de 2,5 pontos, o sistema avisa, mostra a pergunta que mais as separa e sugere um teste prático |
-| **Análise de lacunas** | compara seu conhecimento (0–3) com o exigido para estágio, júnior ou pleno |
-| **Roadmap** | 3 fases, respeitando pré-requisitos, com links gratuitos, entregáveis e estimativa de horas/semanas |
-| **Portfólio e certificação** | projetos escolhidos pelo quanto cobrem suas lacunas + certificações por custo e nível |
-| **Exportação** | plano completo em Markdown e resultado estruturado em JSON |
-
----
-
-## 🧠 Como o cálculo funciona
-
-O motor tem quatro camadas, todas parametrizadas por `data/*.json`:
-
-1. **Soma ponderada** — cada resposta `r` vira `a = (r − 1)/4` e é multiplicada pelo peso da pergunta em cada
-   trilha (`w` pode ser negativo: matemática alta afasta Front-end, por exemplo).
-2. **Normalização por faixa** — a pontuação bruta é comparada com o mínimo e o máximo alcançáveis *daquela*
-   trilha, gerando uma força de 0 a 1.
-3. **Fatores de certeza (MYCIN)** — as evidências de cada pergunta são combinadas (`cf1 + cf2(1 − cf1)` para
-   positivas, `cf1 + cf2(1 + cf1)` para negativas, `(cf1 + cf2)/(1 − min)` para opostas), medindo a
-   consistência do perfil.
-4. **Regras de conflito e contexto** — 16 penalidades, 10 bônus e ajustes de objetivo/modalidade multiplicam a
-   força; o percentual final aplica a calibração `100 × 0,97 × G^0,70`.
-
-O detalhamento matemático completo está no [relatório técnico](docs/relatorio-tecnico.md).
-
----
-
-## 📊 Resultados de validação
-
-Saída real de `python tools/benchmark.py` (tabela completa em [docs/resultados-validacao.md](docs/resultados-validacao.md)):
-
-| Perfil | 1º lugar | % | 2º lugar | % | Margem | Confiança |
-|---|---|---|---|---|---|---|
-| Analítico (matemática + dados) | Ciência de Dados e ML | 86,1% | Back-end | 79,6% | 6,5 | média |
-| Visual (design + interface) | Front-end & UI/UX | 89,1% | Mobile | 81,7% | 7,4 | alta |
-| Infraestrutura (Linux + automação) | DevOps & SRE | 91,5% | Arquitetura em Nuvem | 88,5% | 3,0 | média |
-| Segurança (redes + defesa) | Cibersegurança | 84,6% | DevOps & SRE | 76,1% | 8,5 | alta |
-| Negócios (produto + comunicação) | Gestão de Produtos | 91,8% | Front-end | 59,2% | 32,6 | alta |
-| Back-end (lógica + código) | Back-end | 83,9% | QA | 70,9% | 13,0 | alta |
-
-**Casos-limite também são testados:**
-
-- **Perfil neutro** (todas as respostas 3): todos os percentuais entre 59% e 61%, empate declarado,
-  confiança 0,02 e mensagem explícita de que o resultado é uma hipótese inicial.
-- **Perfil contraditório** (design + infraestrutura + matemática no máximo): Dados 75,9% × Segurança 75,8%,
-  margem de 0,1 ponto → empate detectado e teste de desempate sugerido.
-
----
-
-## ▶️ Como executar (Windows)
+## Como executar
 
 ```powershell
 git clone https://github.com/vinicius589/consultor-inteligente-carreiras-ti.git
 cd consultor-inteligente-carreiras-ti
 
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1      # se bloquear: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-python -m pip install --upgrade pip
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 
-python -m streamlit run app.py    # abre em http://localhost:8501
+python -m streamlit run app.py
 ```
 
-### Linha de comando (sem interface)
+Abre em `http://localhost:8501`.
+
+Para ver um resultado sem responder ao questionário, use o menu **Modo demonstração** na barra
+lateral ou acrescente `?perfil=perfil_devops` à URL.
+
+## Como testar
 
 ```powershell
-python main.py --perfil exemplos\perfil_devops.json --saida plano.md --json resultado.json
+python -m pytest
 ```
 
-Saída no terminal:
+São **55 testes** (motor, lacunas, roadmap, base de conhecimento, casos-limite, relatório e o
+wizard completo pela interface).
+
+## Prints dos testes
+
+Todos os testes manuais estão documentados, com print, em **[TESTES.md](TESTES.md)**:
+fluxo do wizard, abas do resultado, 6 personas, 2 casos-limite, cobertura das 10 trilhas e a
+saída do pytest.
+
+![Resultado — perfil de infraestrutura](docs/prints/persona-devops.png)
+
+## Estrutura
 
 ```
-   1. DevOps & SRE                            91.5%  ← recomendada
-   2. Arquitetura em Nuvem                    88.5%
-   3. Cibersegurança                          85.0%
+app.py                      interface Streamlit (wizard + resultado)
+data/                       base de conhecimento em JSON
+src/consultor/
+  base_conhecimento.py      leitura e validação dos JSON
+  motor.py                  pontuação ponderada, certeza, penalidades e ranking
+  lacunas.py                análise de lacunas por senioridade
+  roadmap.py                fases, certificações e portfólio
+  relatorio.py              exportação em Markdown e JSON
+  servico.py                execução completa de um perfil
+tests/                      55 testes automatizados
+exemplos/                   perfis usados nos testes manuais
+docs/prints/                prints dos testes
+TESTES.md                   relatório dos testes manuais
 ```
 
-### Testes
+## Base de conhecimento
 
-```powershell
-python -m pytest                  # 55 testes, incluindo o wizard completo via AppTest
-```
-
-### Ferramentas de apoio
-
-```powershell
-python tools\benchmark.py --saida docs\resultados-validacao.md   # roda todos os perfis
-python tools\exportar_matriz.py --saida docs\matriz-de-pesos.md  # matriz perguntas × trilhas
-```
-
----
-
-## 🗂️ Base de conhecimento (sem código)
-
-Nenhum peso ou regra está no Python. Quatro arquivos compõem a base:
+Nenhum peso ou regra fica no código Python:
 
 | Arquivo | Conteúdo |
 |---|---|
-| `data/trilhas.json` | 10 trilhas: dimensões, eixos do radar, competências por senioridade, tecnologias, certificações, projetos, sinais de mercado |
+| `data/trilhas.json` | 10 trilhas, competências por nível, certificações, projetos e mercado |
 | `data/perguntas.json` | 3 etapas do formulário e as 17 perguntas com os pesos por trilha |
-| `data/regras.json` | penalidades, bônus, ajustes por objetivo/modalidade, níveis e calibração |
-| `data/recursos.json` | 57 competências com links gratuitos, horas-base, prática sugerida e pré-requisitos |
+| `data/regras.json` | penalidades, bônus, ajustes por objetivo e calibração |
+| `data/recursos.json` | 57 competências com links, horas e pré-requisitos |
 
-O carregamento é **fail-fast**: id duplicado, peso apontando para trilha inexistente, competência sem recurso
-de estudo ou regra citando pergunta desconhecida interrompem a execução com mensagem clara — e há teste
-para cada um desses casos.
+Para alterar o comportamento do sistema, edite os JSON — o código apenas interpreta e valida.
 
-Para incluir uma trilha nova: acrescente o objeto em `trilhas.json`, adicione pesos nas 17 perguntas de
-`perguntas.json` e rode `python -m pytest`. A validação avisa exatamente o que falta.
+## Observação
 
----
-
-## 🧱 Estrutura
-
-```
-.
-├── app.py                      # interface Streamlit (wizard em 3 etapas)
-├── main.py                     # entrada de linha de comando
-├── data/                       # base de conhecimento (JSON)
-│   ├── trilhas.json
-│   ├── perguntas.json
-│   ├── regras.json
-│   └── recursos.json
-├── src/consultor/
-│   ├── base_conhecimento.py    # carregamento e validação
-│   ├── motor.py                # soma ponderada + fatores de certeza + ranking
-│   ├── lacunas.py              # skill gap por senioridade
-│   ├── roadmap.py              # fases, certificações, portfólio
-│   ├── relatorio.py            # exportação Markdown/JSON
-│   └── cli.py                  # execução em lote
-├── exemplos/                   # 8 perfis (6 personas + 2 casos-limite)
-├── tests/                      # 55 testes (unidade, integração, interface)
-├── tools/                      # benchmark e exportação da matriz
-├── docs/                       # relatório técnico, matriz, validação, arquitetura
-└── legacy/                     # versão anterior (Experta, regras binárias)
-```
-
-![Arquitetura do sistema](docs/arquitetura.svg)
-
----
-
-## 📚 Documentação
-
-- [Relatório técnico](docs/relatorio-tecnico.md) — modelagem, fórmulas, decisões de projeto, limitações
-- [Matriz de pesos](docs/matriz-de-pesos.md) — 17 perguntas × 10 trilhas, com cobertura por trilha
-- [Resultados de validação](docs/resultados-validacao.md) — tabela gerada por `tools/benchmark.py`
-- [Arquitetura](docs/arquitetura.svg) — fluxo entre os módulos
-
----
-
-## 🔁 Evolução em relação à versão anterior
-
-A primeira entrega da disciplina usava **regras SE–ENTÃO binárias no Experta**, com 5 perguntas de múltipla
-escolha e uma única recomendação. Esta versão substitui o motor por inferência ponderada com fatores de
-certeza, base externa em JSON e plano de ação — mas a versão original continua no repositório, em
-[`legacy/`](legacy), com seus testes (executados apenas se o Experta estiver instalado):
-
-```powershell
-python -m pip install -r legacy\requirements-experta.txt
-python -m pytest legacy -q
-```
-
----
-
-## ⚠️ Limitações
-
-- Os pesos foram calibrados por julgamento de especialista e validados com personas sintéticas; não houve
-  validação estatística com amostra real de estudantes.
-- As faixas salariais são estimativas de mercado, não dados oficiais.
-- O sistema depende da autoavaliação honesta de competências.
-- A recomendação é uma **hipótese de trabalho**, não diagnóstico vocacional nem garantia de empregabilidade.
-
----
-
-**Projeto acadêmico — Inteligência Artificial — UNIPAC Barbacena.**
+A recomendação é uma orientação construída a partir das respostas do usuário, não um diagnóstico
+vocacional nem garantia de empregabilidade.

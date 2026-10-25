@@ -1,0 +1,30 @@
+{
+  "nome": "Perfil ideal — Desenvolvimento Mobile",
+  "formacao": "autodidata",
+  "experiencia": "6m_2a",
+  "objetivo": "especializacao",
+  "modalidade": "remoto",
+  "nivel_alvo": "estagio",
+  "horas_semana": 15,
+  "prazo_meses": 12,
+  "respostas": {
+    "q_logica": 5,
+    "q_matematica": 2,
+    "q_codigo": 5,
+    "q_sistemas": 4,
+    "q_visual": 5,
+    "q_usabilidade": 5,
+    "q_dados": 2,
+    "q_eng_dados": 1,
+    "q_infra": 1,
+    "q_automacao": 2,
+    "q_seguranca": 2,
+    "q_qualidade": 4,
+    "q_produto": 4,
+    "q_comunicacao": 4,
+    "q_mobile": 5,
+    "q_nuvem": 2,
+    "q_plantao": 2
+  },
+  "conhecimentos": {}
+}

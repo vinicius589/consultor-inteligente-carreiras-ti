@@ -88,9 +88,63 @@ def carregar_base_streamlit() -> BaseConhecimento:
     return base_padrao()
 
 
+@st.cache_data(show_spinner=False)
+def perfis_de_exemplo() -> dict[str, dict[str, Any]]:
+    """Perfis prontos em exemplos/, usados no modo demonstração e nos prints."""
+    perfis: dict[str, dict[str, Any]] = {}
+    for caminho in sorted((RAIZ / "exemplos").glob("*.json")):
+        try:
+            perfis[caminho.stem] = json.loads(caminho.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+    return perfis
+
+
+def aplicar_perfil(base: BaseConhecimento, perfil: dict[str, Any]) -> None:
+    """Carrega um perfil completo e calcula o resultado, sem passar pelo wizard."""
+    for chave in list(st.session_state.keys()):
+        if chave.startswith(("resp_", "campo_", "nivel_")):
+            del st.session_state[chave]
+    respostas = {chave: float(valor) for chave, valor in (perfil.get("respostas") or {}).items()}
+    conhecimentos = {chave: int(valor) for chave, valor in (perfil.get("conhecimentos") or {}).items()}
+    dados = {
+        campo: perfil[campo]
+        for campo in ("nome", "formacao", "experiencia", "horas_semana", "objetivo",
+                      "nivel_alvo", "prazo", "prazo_meses", "modalidade")
+        if campo in perfil
+    }
+    if "prazo_meses" in dados and "prazo" not in dados:
+        dados["prazo"] = dados["prazo_meses"]
+    st.session_state["respostas"] = respostas
+    st.session_state["conhecimentos"] = conhecimentos
+    st.session_state["dados"] = dados
+    resultado = avaliar(
+        base,
+        respostas,
+        objetivo=perfil.get("objetivo"),
+        modalidade=perfil.get("modalidade"),
+        nivel_alvo=perfil.get("nivel_alvo", "junior"),
+    )
+    plano = gerar_plano(
+        base,
+        resultado.top.id,
+        conhecimentos,
+        nivel_alvo=perfil.get("nivel_alvo", "junior"),
+        horas_semana=int(perfil.get("horas_semana") or 10),
+        prazo_meses=int(perfil.get("prazo_meses") or 6),
+        objetivo=perfil.get("objetivo"),
+    )
+    st.session_state["resultado"] = resultado
+    st.session_state["plano"] = plano
+    st.session_state["perfil_export"] = {**perfil, "respostas": respostas, "conhecimentos": conhecimentos}
+    st.session_state["modo_demo"] = perfil.get("nome") or "exemplo"
+    st.session_state["etapa"] = 3
+
+
 def reiniciar() -> None:
     for chave in list(st.session_state.keys()):
         del st.session_state[chave]
+    st.query_params.clear()
     st.rerun()
 
 
@@ -169,6 +223,22 @@ def barra_lateral(base: BaseConhecimento) -> None:
                 "4. Fatores de certeza (MYCIN) medem a consistência do perfil.\n"
                 "5. Penalidades, bônus e objetivos ajustam o resultado final."
             )
+        with st.expander("Modo demonstração"):
+            st.caption(
+                "Carregue um perfil pronto de `exemplos/` para ver o resultado sem responder ao "
+                "questionário. Também funciona pela URL: `?perfil=perfil_devops`."
+            )
+            exemplos = perfis_de_exemplo()
+            if exemplos:
+                escolha = st.selectbox(
+                    "Perfil de exemplo",
+                    list(exemplos),
+                    format_func=lambda chave: exemplos[chave].get("nome", chave),
+                    key="seletor_demo",
+                )
+                if st.button("Carregar perfil de exemplo", width="stretch"):
+                    aplicar_perfil(base, exemplos[escolha])
+                    st.rerun()
         if st.button("Recomeçar", width="stretch"):
             reiniciar()
 
@@ -204,13 +274,9 @@ def _explicar_segundo(avaliada, resultado: "Resultado", base: BaseConhecimento) 
 
 def cartao_trilha(avaliada, base: BaseConhecimento, posicao: int) -> None:
     with st.container(border=True):
-        col_a, col_b = st.columns([3, 1])
-        with col_a:
-            st.markdown(f"**{posicao}º · {avaliada.nome}**")
-            st.caption(base.trilha(avaliada.id).resumo)
-        with col_b:
-            st.metric("Compatibilidade", pct(avaliada.percentual))
-            st.caption(f"certeza {num(avaliada.certeza)}")
+        st.markdown(f"**{posicao}º · {avaliada.nome} — {pct(avaliada.percentual)}**")
+        st.caption(base.trilha(avaliada.id).resumo)
+        st.caption(f"certeza {num(avaliada.certeza)} · força {num(avaliada.forca)}")
 
 
 # ------------------------------------------------------------------- gráficos
@@ -228,13 +294,14 @@ def grafico_ranking(resultado: Resultado) -> go.Figure:
             marker_color=cores,
             text=[pct(v) for v in valores],
             textposition="outside",
+            cliponaxis=False,
             hovertemplate="%{y}: %{x:.1f}%<extra></extra>",
         )
     )
     figura.update_layout(
         height=380,
         margin=dict(l=10, r=30, t=10, b=10),
-        xaxis=dict(range=[0, 100], title="Compatibilidade (%)", gridcolor="#eef2ff"),
+        xaxis=dict(range=[0, 112], title="Compatibilidade (%)", gridcolor="#eef2ff"),
         yaxis=dict(title=""),
         plot_bgcolor="white",
         showlegend=False,
@@ -478,19 +545,28 @@ def painel_resultado(base: BaseConhecimento) -> None:
         return
 
     st.subheader("Resultado da análise")
+    if st.session_state.get("modo_demo"):
+        st.info(
+            f"Perfil de demonstração carregado: **{st.session_state['modo_demo']}**. "
+            "Clique em *Recomeçar* para responder ao questionário com seu próprio perfil."
+        )
     nome = perfil.get("nome") or "Estudante"
     st.write(f"**{nome}**, seu perfil foi comparado com {len(base.trilhas)} trilhas de tecnologia.")
 
     top = resultado.top
     segundo = resultado.ranking[1]
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Trilha recomendada", top.nome, f"{pct(top.percentual)} de aderência")
-    col2.metric("2ª opção", segundo.nome, pct(segundo.percentual))
-    col3.metric("Confiança", ROTULO_CONFIANCA.get(resultado.nivel_confianca, resultado.nivel_confianca),
-                f"índice {num(resultado.confianca)}")
+    st.markdown(f"### 🎯 {top.nome}")
+    st.caption(base.trilha(top.id).resumo)
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Aderência da 1ª trilha", pct(top.percentual))
+    col2.metric("2ª opção", pct(segundo.percentual))
+    col3.metric("Confiança", ROTULO_CONFIANCA.get(resultado.nivel_confianca, resultado.nivel_confianca))
     estabilidade = resultado.sensibilidade.get("estabilidade")
-    col4.metric("Estabilidade", f"{estabilidade * 100:.0f}%" if estabilidade is not None else "—",
-                "variações de ±1 ponto")
+    detalhe = f"1ª: {top.nome} · 2ª: {segundo.nome} · índice de confiança {num(resultado.confianca)}"
+    if estabilidade is not None:
+        detalhe += f" · estabilidade {estabilidade * 100:.0f}% em variações de ±1 ponto"
+    st.caption(detalhe)
 
     if resultado.empate:
         st.warning(f"**Empate técnico.** {resultado.mensagem_confianca}")
@@ -703,6 +779,17 @@ def main() -> None:
         st.error(f"Falha ao carregar a base de conhecimento: {erro}")
         st.stop()
         return
+
+    demo = st.query_params.get("perfil")
+    if isinstance(demo, list):
+        demo = demo[0] if demo else None
+    if demo and not st.session_state.get("demo_aplicada"):
+        exemplo = perfis_de_exemplo().get(str(demo).replace(".json", ""))
+        st.session_state["demo_aplicada"] = True
+        if exemplo:
+            aplicar_perfil(base, exemplo)
+        else:
+            st.warning(f"Perfil de exemplo desconhecido: {demo}")
 
     cabecalho(base)
     barra_lateral(base)

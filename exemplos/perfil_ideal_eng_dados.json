@@ -1,0 +1,30 @@
+{
+  "nome": "Perfil ideal — Engenharia de Dados",
+  "formacao": "autodidata",
+  "experiencia": "6m_2a",
+  "objetivo": "especializacao",
+  "modalidade": "remoto",
+  "nivel_alvo": "estagio",
+  "horas_semana": 15,
+  "prazo_meses": 12,
+  "respostas": {
+    "q_logica": 5,
+    "q_matematica": 4,
+    "q_codigo": 5,
+    "q_sistemas": 4,
+    "q_visual": 1,
+    "q_usabilidade": 2,
+    "q_dados": 5,
+    "q_eng_dados": 5,
+    "q_infra": 5,
+    "q_automacao": 5,
+    "q_seguranca": 4,
+    "q_qualidade": 4,
+    "q_produto": 2,
+    "q_comunicacao": 3,
+    "q_mobile": 1,
+    "q_nuvem": 4,
+    "q_plantao": 3
+  },
+  "conhecimentos": {}
+}
