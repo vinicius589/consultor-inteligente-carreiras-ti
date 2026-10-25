@@ -1,0 +1,2093 @@
+{
+  "versao": "2.0",
+  "atualizado_em": "2026-10-25",
+  "descricao": "Base de conhecimento das 10 trilhas de tecnologia: dimensoes, competencias por senioridade, certificacoes, projetos de portfolio e sinais de mercado.",
+  "eixos": [
+    "programacao",
+    "dados",
+    "visual",
+    "infra",
+    "seguranca",
+    "qualidade",
+    "produto",
+    "mobile"
+  ],
+  "eixos_nomes": {
+    "programacao": "Programação",
+    "dados": "Dados & Matemática",
+    "visual": "Visual & UX",
+    "infra": "Infra & Nuvem",
+    "seguranca": "Segurança",
+    "qualidade": "Qualidade",
+    "produto": "Produto & Pessoas",
+    "mobile": "Mobile"
+  },
+  "dimensoes": {
+    "logica": "Raciocínio lógico e depuração",
+    "matematica": "Matemática e estatística",
+    "codigo": "Escrita de código",
+    "sistemas": "Arquitetura e integração de sistemas",
+    "visual": "Design visual",
+    "usabilidade": "Experiência do usuário",
+    "dados": "Análise de dados",
+    "eng_dados": "Pipelines e engenharia de dados",
+    "infra": "Infraestrutura e operação",
+    "automacao": "Automação",
+    "seguranca": "Segurança",
+    "qualidade": "Qualidade e testes",
+    "produto": "Produto e negócio",
+    "comunicacao": "Comunicação e liderança",
+    "mobile": "Desenvolvimento mobile",
+    "nuvem": "Computação em nuvem",
+    "plantao": "Operação crítica e plantão"
+  },
+  "trilhas": [
+    {
+      "id": "backend",
+      "nome": "Desenvolvimento Back-end",
+      "resumo": "Constrói a lógica de servidores, APIs, regras de negócio e integração com bancos de dados.",
+      "descricao": "A trilha de Back-end é responsável pelo que acontece por trás das telas: APIs, autenticação, regras de negócio, persistência e desempenho. É a área com maior volume de vagas para iniciantes e exige base sólida de lógica, estruturas de dados e banco de dados relacional.",
+      "dimensoes": {
+        "logica": 0.95,
+        "matematica": 0.2,
+        "codigo": 1.0,
+        "sistemas": 0.8,
+        "visual": 0.0,
+        "usabilidade": 0.0,
+        "dados": 0.25,
+        "eng_dados": 0.2,
+        "infra": 0.3,
+        "automacao": 0.15,
+        "seguranca": 0.15,
+        "qualidade": 0.3,
+        "produto": 0.0,
+        "comunicacao": 0.05,
+        "mobile": 0.0,
+        "nuvem": 0.1,
+        "plantao": 0.05
+      },
+      "eixos": {
+        "programacao": 0.95,
+        "dados": 0.45,
+        "visual": 0.1,
+        "infra": 0.45,
+        "seguranca": 0.35,
+        "qualidade": 0.5,
+        "produto": 0.2,
+        "mobile": 0.15
+      },
+      "competencias": [
+        {
+          "id": "logica_prog",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "python",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "api_rest",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "sql",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "modelagem_dados",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "testes_unitarios",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "git",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "docker",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "bancos_nosql",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Lógica de programação e Git",
+        "Python ou Java",
+        "SQL e modelagem relacional",
+        "APIs REST e autenticação",
+        "Testes automatizados",
+        "Docker e deploy"
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Developer – Associate",
+          "custo": "alto",
+          "nivel": "intermediario",
+          "link": "https://aws.amazon.com/pt/certification/certified-developer-associate/",
+          "quando": "Depois de dominar uma linguagem e APIs."
+        },
+        {
+          "nome": "Meta Back-End Developer (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/meta-back-end-developer",
+          "quando": "Boa ponte entre fundamentos e projeto de portfólio."
+        },
+        {
+          "nome": "Oracle Database SQL Certified Associate",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://education.oracle.com/",
+          "quando": "Se o alvo for back-end com forte peso em banco de dados."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "API de biblioteca com autenticação JWT",
+          "descricao": "CRUD completo com usuários, empréstimos e regras de negócio, documentado com OpenAPI.",
+          "competencias": [
+            "api_rest",
+            "python",
+            "sql",
+            "testes_unitarios"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Mostra modelagem de dados, autenticação e testes — exatamente o que se pede em entrevista júnior."
+        },
+        {
+          "titulo": "Encurtador de URLs com cache e métricas",
+          "descricao": "Serviço que encurta URLs, redireciona e expõe métricas de uso, com cache em Redis.",
+          "competencias": [
+            "api_rest",
+            "docker",
+            "sql"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Demonstra preocupação com desempenho e leitura de requisitos não funcionais."
+        },
+        {
+          "titulo": "Serviço de pedidos com fila e idempotência",
+          "descricao": "API que processa pedidos de forma assíncrona, com fila e garantia de não duplicar cobranças.",
+          "competencias": [
+            "api_rest",
+            "bancos_nosql",
+            "docker"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Diferencial para vagas que pedem sistemas distribuídos."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.92,
+        "volume_vagas": 0.95,
+        "salario_relativo": 0.7,
+        "remoto": 0.85,
+        "transicao": 0.8
+      },
+      "salario_junior": "R$ 3.000 – R$ 5.500",
+      "areas_atuacao": [
+        "Fintechs e bancos",
+        "E-commerce",
+        "SaaS B2B",
+        "Empresas de logística"
+      ]
+    },
+    {
+      "id": "frontend",
+      "nome": "Desenvolvimento Front-end & UI/UX",
+      "resumo": "Cria interfaces web, componentes reutilizáveis e experiências de uso acessíveis.",
+      "descricao": "Front-end & UI/UX conecta o usuário ao sistema: layout, componentes, estados de tela, acessibilidade e performance percebida. É a trilha mais visual e a que permite montar portfólio rapidamente, o que ajuda em transições de carreira.",
+      "dimensoes": {
+        "logica": 0.45,
+        "matematica": -0.2,
+        "codigo": 0.85,
+        "sistemas": 0.2,
+        "visual": 1.0,
+        "usabilidade": 0.95,
+        "dados": 0.1,
+        "eng_dados": 0.0,
+        "infra": -0.15,
+        "automacao": 0.05,
+        "seguranca": -0.05,
+        "qualidade": 0.3,
+        "produto": 0.15,
+        "comunicacao": 0.3,
+        "mobile": 0.3,
+        "nuvem": 0.0,
+        "plantao": -0.1
+      },
+      "eixos": {
+        "programacao": 0.75,
+        "dados": 0.2,
+        "visual": 0.95,
+        "infra": 0.15,
+        "seguranca": 0.1,
+        "qualidade": 0.4,
+        "produto": 0.45,
+        "mobile": 0.45
+      },
+      "competencias": [
+        {
+          "id": "html_css",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "javascript",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "typescript",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "react",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "figma",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "ux_pesquisa",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "acessibilidade",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "design_system",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "git",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "HTML, CSS e Git",
+        "JavaScript moderno",
+        "TypeScript e React",
+        "Consumo de APIs e estados de tela",
+        "Acessibilidade e responsividade",
+        "Testes de interface e deploy"
+      ],
+      "certificacoes": [
+        {
+          "nome": "Meta Front-End Developer (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+          "quando": "Cobre React, projeto final e portfólio."
+        },
+        {
+          "nome": "Google UX Design (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/google-ux-design",
+          "quando": "Útil se o interesse for mais UX do que código."
+        },
+        {
+          "nome": "freeCodeCamp – Front End Development Libraries",
+          "custo": "gratuito",
+          "nivel": "iniciante",
+          "link": "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+          "quando": "Alternativa gratuita para começar hoje."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Dashboard de finanças pessoais",
+          "descricao": "Aplicação responsiva que consome uma API, com gráficos, filtros e estados de carregamento/erro.",
+          "competencias": [
+            "react",
+            "typescript",
+            "html_css"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Mostra domínio de estado, requisições e visualização — o trio mais cobrado em front-end."
+        },
+        {
+          "titulo": "Design system com componentes documentados",
+          "descricao": "Biblioteca própria de botões, formulários e tabelas, com Storybook e testes.",
+          "competencias": [
+            "design_system",
+            "react",
+            "acessibilidade"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Demonstra visão de produto e consistência, não só 'fazer tela bonita'."
+        },
+        {
+          "titulo": "App de tarefas com acessibilidade AA",
+          "descricao": "Aplicação web com navegação por teclado, leitores de tela e contraste validado.",
+          "competencias": [
+            "acessibilidade",
+            "javascript",
+            "html_css"
+          ],
+          "dificuldade": "baixa",
+          "diferencial": "Acessibilidade é diferencial raro em portfólios júnior."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.88,
+        "volume_vagas": 0.85,
+        "salario_relativo": 0.65,
+        "remoto": 0.9,
+        "transicao": 0.85
+      },
+      "salario_junior": "R$ 2.800 – R$ 5.000",
+      "areas_atuacao": [
+        "Agências digitais",
+        "Startups de produto",
+        "E-commerce",
+        "Consultorias"
+      ]
+    },
+    {
+      "id": "dados_ml",
+      "nome": "Ciência de Dados e Machine Learning",
+      "resumo": "Analisa dados, constrói modelos preditivos e transforma números em decisão.",
+      "descricao": "Ciência de Dados combina estatística, programação e comunicação para responder perguntas de negócio. Exige base matemática mais forte que as demais trilhas e costuma pedir pós-graduação ou portfólio com projetos bem documentados para a primeira vaga.",
+      "dimensoes": {
+        "logica": 0.55,
+        "matematica": 1.0,
+        "codigo": 0.55,
+        "sistemas": 0.2,
+        "visual": 0.1,
+        "usabilidade": 0.0,
+        "dados": 1.0,
+        "eng_dados": 0.35,
+        "infra": 0.1,
+        "automacao": 0.1,
+        "seguranca": 0.05,
+        "qualidade": 0.1,
+        "produto": 0.1,
+        "comunicacao": 0.05,
+        "mobile": -0.15,
+        "nuvem": 0.1,
+        "plantao": -0.05
+      },
+      "eixos": {
+        "programacao": 0.65,
+        "dados": 0.95,
+        "visual": 0.2,
+        "infra": 0.2,
+        "seguranca": 0.15,
+        "qualidade": 0.25,
+        "produto": 0.3,
+        "mobile": 0.05
+      },
+      "competencias": [
+        {
+          "id": "python",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "estatistica",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "pandas",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "machine_learning",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "sql",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "visualizacao",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "git",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "spark",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Python e Git",
+        "Estatística e probabilidade",
+        "Pandas e análise exploratória",
+        "SQL para extração de dados",
+        "Machine Learning com scikit-learn",
+        "Comunicação de resultados e deploy"
+      ],
+      "certificacoes": [
+        {
+          "nome": "Google Data Analytics (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "quando": "Bom ponto de partida para quem vem de outra área."
+        },
+        {
+          "nome": "AWS Certified Machine Learning – Specialty",
+          "custo": "alto",
+          "nivel": "avancado",
+          "link": "https://aws.amazon.com/pt/certification/machine-learning-specialty/",
+          "quando": "Só depois de já trabalhar com modelos em produção."
+        },
+        {
+          "nome": "TensorFlow Developer Certificate",
+          "custo": "alto",
+          "nivel": "intermediario",
+          "link": "https://www.tensorflow.org/certificate",
+          "quando": "Útil se o foco for deep learning aplicado."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Análise exploratória de dados públicos",
+          "descricao": "Estudo de dados do IBGE ou DATASUS com perguntas de negócio, gráficos e conclusões escritas.",
+          "competencias": [
+            "pandas",
+            "visualizacao",
+            "estatistica"
+          ],
+          "dificuldade": "baixa",
+          "diferencial": "O que mais falta em portfólio júnior é conclusão escrita, não gráfico bonito."
+        },
+        {
+          "titulo": "Modelo de churn com pipeline reprodutível",
+          "descricao": "Pipeline scikit-learn com validação, métricas, explicabilidade e comparação de modelos.",
+          "competencias": [
+            "machine_learning",
+            "python",
+            "estatistica"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Mostra rigor metodológico: validação correta e discussão de métricas."
+        },
+        {
+          "titulo": "Previsão de demanda exposta como API",
+          "descricao": "Modelo de série temporal publicado como endpoint com monitoramento simples.",
+          "competencias": [
+            "machine_learning",
+            "python",
+            "git"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Aproxima ciência de dados de engenharia — diferencial competitivo."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.55,
+        "volume_vagas": 0.7,
+        "salario_relativo": 0.9,
+        "remoto": 0.85,
+        "transicao": 0.5
+      },
+      "salario_junior": "R$ 4.000 – R$ 7.000",
+      "areas_atuacao": [
+        "Bancos e crédito",
+        "Varejo",
+        "Healthtechs",
+        "Consultorias de dados"
+      ]
+    },
+    {
+      "id": "eng_dados",
+      "nome": "Engenharia de Dados",
+      "resumo": "Constrói e mantém pipelines, data warehouses e a qualidade dos dados que alimentam a empresa.",
+      "descricao": "Engenharia de Dados é a trilha de infraestrutura analítica: ingestão, transformação, orquestração e qualidade. Fica entre back-end e dados, com alta demanda e menos concorrência que ciência de dados.",
+      "dimensoes": {
+        "logica": 0.5,
+        "matematica": 0.3,
+        "codigo": 0.55,
+        "sistemas": 0.4,
+        "visual": -0.1,
+        "usabilidade": 0.0,
+        "dados": 0.8,
+        "eng_dados": 1.0,
+        "infra": 0.45,
+        "automacao": 0.55,
+        "seguranca": 0.15,
+        "qualidade": 0.35,
+        "produto": 0.0,
+        "comunicacao": 0.05,
+        "mobile": -0.2,
+        "nuvem": 0.35,
+        "plantao": 0.1
+      },
+      "eixos": {
+        "programacao": 0.65,
+        "dados": 0.85,
+        "visual": 0.05,
+        "infra": 0.55,
+        "seguranca": 0.25,
+        "qualidade": 0.45,
+        "produto": 0.15,
+        "mobile": 0.0
+      },
+      "competencias": [
+        {
+          "id": "sql",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "python",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "modelagem_dados",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "airflow",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "data_warehouse",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "dbt",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "spark",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "docker",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "aws",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "SQL avançado e modelagem dimensional",
+        "Python para dados",
+        "Orquestração com Airflow",
+        "Transformação com dbt",
+        "Data warehouse e camadas",
+        "Spark e cloud para volume"
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Data Engineer – Associate",
+          "custo": "alto",
+          "nivel": "intermediario",
+          "link": "https://aws.amazon.com/pt/certification/data-engineer-associate/",
+          "quando": "Reconhecida pelo mercado e alinhada a pipelines em nuvem."
+        },
+        {
+          "nome": "dbt Analytics Engineering Certification",
+          "custo": "baixo",
+          "nivel": "intermediario",
+          "link": "https://www.getdbt.com/certifications",
+          "quando": "Barata e muito valorizada em vagas de analytics engineering."
+        },
+        {
+          "nome": "Google Cloud Professional Data Engineer",
+          "custo": "alto",
+          "nivel": "avancado",
+          "link": "https://cloud.google.com/learn/certification/data-engineer",
+          "quando": "Depois de experiência real com pipelines."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Pipeline ELT com Airflow, dbt e Postgres",
+          "descricao": "Ingestão de uma API pública, camadas bronze/prata/ouro e testes de qualidade de dados.",
+          "competencias": [
+            "airflow",
+            "dbt",
+            "sql",
+            "data_warehouse"
+          ],
+          "dificuldade": "media",
+          "diferencial": "É o projeto que mais se parece com o dia a dia da função."
+        },
+        {
+          "titulo": "Data warehouse em camadas com testes",
+          "descricao": "Modelagem dimensional documentada, com testes de unicidade, nulos e relacionamentos.",
+          "competencias": [
+            "modelagem_dados",
+            "sql",
+            "data_warehouse"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Mostra preocupação com confiabilidade — o core da engenharia de dados."
+        },
+        {
+          "titulo": "Ingestão incremental de dados públicos",
+          "descricao": "Rotina idempotente que baixa, valida e carrega dados diários com registro de execuções.",
+          "competencias": [
+            "python",
+            "airflow",
+            "docker"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Idempotência e incrementalidade são exatamente o que se cobra em entrevista."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.65,
+        "volume_vagas": 0.72,
+        "salario_relativo": 0.85,
+        "remoto": 0.88,
+        "transicao": 0.65
+      },
+      "salario_junior": "R$ 4.000 – R$ 6.500",
+      "areas_atuacao": [
+        "Varejo",
+        "Bancos",
+        "Empresas de mídia",
+        "Consultorias de dados"
+      ]
+    },
+    {
+      "id": "seguranca",
+      "nome": "Cibersegurança",
+      "resumo": "Protege sistemas: analisa riscos, investiga incidentes e aplica controles de defesa.",
+      "descricao": "Cibersegurança exige base de redes e sistemas operacionais, além de método para investigar. A entrada costuma acontecer por SOC (monitoramento), análise de vulnerabilidades ou governança. É uma área de confiança: certificação e ética pesam bastante.",
+      "dimensoes": {
+        "logica": 0.5,
+        "matematica": 0.25,
+        "codigo": 0.3,
+        "sistemas": 0.5,
+        "visual": -0.25,
+        "usabilidade": -0.1,
+        "dados": 0.25,
+        "eng_dados": 0.05,
+        "infra": 0.7,
+        "automacao": 0.3,
+        "seguranca": 1.0,
+        "qualidade": 0.2,
+        "produto": 0.0,
+        "comunicacao": 0.15,
+        "mobile": -0.05,
+        "nuvem": 0.25,
+        "plantao": 0.4
+      },
+      "eixos": {
+        "programacao": 0.5,
+        "dados": 0.35,
+        "visual": 0.05,
+        "infra": 0.75,
+        "seguranca": 0.95,
+        "qualidade": 0.3,
+        "produto": 0.2,
+        "mobile": 0.05
+      },
+      "competencias": [
+        {
+          "id": "redes",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "linux",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "iam",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "analise_risco",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "criptografia",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "pentest",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "siem",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "normas_iso",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "python",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Redes e TCP/IP",
+        "Linux e shell",
+        "Fundamentos de criptografia",
+        "Gestão de identidade e acesso",
+        "Análise de vulnerabilidades",
+        "Resposta a incidentes e normas"
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISC2 Certified in Cybersecurity (CC)",
+          "custo": "gratuito",
+          "nivel": "iniciante",
+          "link": "https://www.isc2.org/certifications/cc",
+          "quando": "Exame gratuito pelo programa One Million Certified — melhor porta de entrada."
+        },
+        {
+          "nome": "CompTIA Security+",
+          "custo": "alto",
+          "nivel": "intermediario",
+          "link": "https://www.comptia.org/certifications/security",
+          "quando": "Certificação mais pedida em vagas de analista júnior."
+        },
+        {
+          "nome": "Google Cybersecurity (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+          "quando": "Boa base prática com laboratórios."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Relatório de pentest em aplicação vulnerável",
+          "descricao": "Exploração guiada do OWASP Juice Shop com relatório no formato profissional (achado, impacto, correção).",
+          "competencias": [
+            "pentest",
+            "redes",
+            "analise_risco"
+          ],
+          "dificuldade": "media",
+          "diferencial": "O que se avalia é o relatório, não o ataque: impacto e recomendação."
+        },
+        {
+          "titulo": "Hardening de servidor Linux com checklist CIS",
+          "descricao": "Script de verificação e aplicação de controles, com antes/depois documentado.",
+          "competencias": [
+            "linux",
+            "redes",
+            "analise_risco"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Mostra método e evidência de auditoria."
+        },
+        {
+          "titulo": "Detecção de ataques com SIEM",
+          "descricao": "Laboratório com Wazuh/ELK, regras de detecção e simulação de incidentes.",
+          "competencias": [
+            "siem",
+            "redes",
+            "linux"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Aproxima do trabalho real de SOC."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.6,
+        "volume_vagas": 0.65,
+        "salario_relativo": 0.85,
+        "remoto": 0.7,
+        "transicao": 0.55
+      },
+      "salario_junior": "R$ 3.500 – R$ 6.000",
+      "areas_atuacao": [
+        "Bancos",
+        "Telecom",
+        "Consultorias de segurança",
+        "SOCs"
+      ]
+    },
+    {
+      "id": "devops",
+      "nome": "DevOps & SRE",
+      "resumo": "Automatiza entrega, opera infraestrutura e garante confiabilidade dos sistemas.",
+      "descricao": "DevOps & SRE cuida do caminho entre o código e a produção: pipelines, containers, infraestrutura como código, observabilidade e resposta a incidentes. Pede maturidade operacional e costuma ser uma segunda etapa de carreira para quem já programa ou administra sistemas.",
+      "dimensoes": {
+        "logica": 0.45,
+        "matematica": 0.05,
+        "codigo": 0.5,
+        "sistemas": 0.6,
+        "visual": -0.2,
+        "usabilidade": -0.1,
+        "dados": 0.15,
+        "eng_dados": 0.15,
+        "infra": 1.0,
+        "automacao": 1.0,
+        "seguranca": 0.3,
+        "qualidade": 0.25,
+        "produto": -0.05,
+        "comunicacao": 0.1,
+        "mobile": -0.15,
+        "nuvem": 0.55,
+        "plantao": 0.45
+      },
+      "eixos": {
+        "programacao": 0.55,
+        "dados": 0.3,
+        "visual": 0.05,
+        "infra": 0.95,
+        "seguranca": 0.5,
+        "qualidade": 0.4,
+        "produto": 0.1,
+        "mobile": 0.05
+      },
+      "competencias": [
+        {
+          "id": "linux",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "git",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "docker",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "kubernetes",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "ci_cd",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "terraform",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "observabilidade",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "bash",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "aws",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Linux, redes e shell script",
+        "Git e cultura de automação",
+        "Docker e Kubernetes",
+        "CI/CD (GitHub Actions)",
+        "Terraform e cloud",
+        "Observabilidade e resposta a incidentes"
+      ],
+      "certificacoes": [
+        {
+          "nome": "GitHub Actions (GitHub Skills)",
+          "custo": "gratuito",
+          "nivel": "iniciante",
+          "link": "https://skills.github.com/",
+          "quando": "Comece por aqui: pipeline real em poucas horas."
+        },
+        {
+          "nome": "AWS Certified SysOps Administrator – Associate",
+          "custo": "alto",
+          "nivel": "intermediario",
+          "link": "https://aws.amazon.com/pt/certification/sysops-administrator-associate/",
+          "quando": "Boa ponte entre operação e nuvem."
+        },
+        {
+          "nome": "CKA – Certified Kubernetes Administrator",
+          "custo": "alto",
+          "nivel": "avancado",
+          "link": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+          "quando": "Exigida em vagas de plataforma; só depois de prática real."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Pipeline CI/CD completo",
+          "descricao": "Build, testes, análise estática, imagem Docker e deploy automatizado com rollback.",
+          "competencias": [
+            "ci_cd",
+            "docker",
+            "git"
+          ],
+          "dificuldade": "media",
+          "diferencial": "É o projeto que prova que você entende entrega, não só código."
+        },
+        {
+          "titulo": "Cluster Kubernetes local com monitoramento",
+          "descricao": "Aplicação com Helm, Prometheus e Grafana, incluindo alertas.",
+          "competencias": [
+            "kubernetes",
+            "observabilidade",
+            "docker"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Mostra operação real: métricas, alertas e limites de recursos."
+        },
+        {
+          "titulo": "Infraestrutura AWS com Terraform",
+          "descricao": "Ambiente reprodutível com rede, compute e banco, versionado e documentado.",
+          "competencias": [
+            "terraform",
+            "aws",
+            "linux"
+          ],
+          "dificuldade": "media",
+          "diferencial": "IaC é requisito em praticamente toda vaga da área."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.45,
+        "volume_vagas": 0.68,
+        "salario_relativo": 0.92,
+        "remoto": 0.9,
+        "transicao": 0.6
+      },
+      "salario_junior": "R$ 4.500 – R$ 7.500",
+      "areas_atuacao": [
+        "Fintechs",
+        "SaaS",
+        "Grandes varejistas",
+        "Provedores de nuvem"
+      ]
+    },
+    {
+      "id": "cloud",
+      "nome": "Arquitetura em Nuvem",
+      "resumo": "Desenha soluções escaláveis, seguras e econômicas em AWS, Azure ou GCP.",
+      "descricao": "Arquitetura em Nuvem decide como sistemas serão distribuídos, quais serviços usar e quanto custarão. Raramente é a primeira vaga: costuma vir depois de experiência com infraestrutura ou desenvolvimento, mas o estudo de fundamentos de nuvem acelera qualquer trilha.",
+      "dimensoes": {
+        "logica": 0.35,
+        "matematica": 0.05,
+        "codigo": 0.25,
+        "sistemas": 0.5,
+        "visual": -0.25,
+        "usabilidade": -0.1,
+        "dados": 0.1,
+        "eng_dados": 0.1,
+        "infra": 0.85,
+        "automacao": 0.45,
+        "seguranca": 0.3,
+        "qualidade": 0.15,
+        "produto": 0.15,
+        "comunicacao": 0.2,
+        "mobile": -0.15,
+        "nuvem": 1.0,
+        "plantao": 0.25
+      },
+      "eixos": {
+        "programacao": 0.35,
+        "dados": 0.25,
+        "visual": 0.1,
+        "infra": 0.95,
+        "seguranca": 0.45,
+        "qualidade": 0.3,
+        "produto": 0.25,
+        "mobile": 0.05
+      },
+      "competencias": [
+        {
+          "id": "aws",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "redes",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "terraform",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "linux",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "iam",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "kubernetes",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "observabilidade",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "azure",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "gcp",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Fundamentos de nuvem e custos",
+        "Redes e segurança na nuvem",
+        "Compute, storage e banco gerenciado",
+        "Infraestrutura como código",
+        "Containers e orquestração",
+        "Well-Architected e FinOps"
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Cloud Practitioner",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://aws.amazon.com/pt/certification/cloud-practitioner/",
+          "quando": "Primeira certificação recomendada para qualquer pessoa que queira entrar em nuvem."
+        },
+        {
+          "nome": "Microsoft AZ-900: Azure Fundamentals",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://learn.microsoft.com/pt-br/credentials/certifications/azure-fundamentals/",
+          "quando": "Alternativa se a empresa alvo usa Microsoft."
+        },
+        {
+          "nome": "Google Cloud Digital Leader",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+          "quando": "Foco em visão de negócio e serviços gerenciados."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Arquitetura serverless na AWS",
+          "descricao": "API + fila + banco gerenciado, descrita em diagrama e provisionada com Terraform.",
+          "competencias": [
+            "aws",
+            "terraform",
+            "iam"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Documentar decisões e custos é o que diferencia arquiteto de usuário de console."
+        },
+        {
+          "titulo": "Migração de monólito para containers",
+          "descricao": "Plano de migração com etapas, riscos e execução de uma parte do sistema.",
+          "competencias": [
+            "docker",
+            "kubernetes",
+            "aws"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Mostra raciocínio de arquitetura, não só configuração."
+        },
+        {
+          "titulo": "Revisão Well-Architected com estimativa de custos",
+          "descricao": "Análise de um sistema real nos seis pilares, com proposta de melhorias e custo.",
+          "competencias": [
+            "aws",
+            "observabilidade",
+            "redes"
+          ],
+          "dificuldade": "media",
+          "diferencial": "FinOps e trade-offs são temas recorrentes em entrevistas de arquitetura."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.4,
+        "volume_vagas": 0.6,
+        "salario_relativo": 0.95,
+        "remoto": 0.85,
+        "transicao": 0.45
+      },
+      "salario_junior": "R$ 5.000 – R$ 8.000",
+      "areas_atuacao": [
+        "Consultorias de nuvem",
+        "Bancos",
+        "Multinacionais",
+        "Provedores de serviço"
+      ]
+    },
+    {
+      "id": "mobile",
+      "nome": "Desenvolvimento Mobile",
+      "resumo": "Cria aplicativos para Android e iOS, cuidando de performance, offline e publicação.",
+      "descricao": "Desenvolvimento Mobile tem ciclo de publicação, restrições de dispositivo e experiência de toque. Com React Native ou Flutter é possível atender as duas lojas com uma base de código, o que facilita o primeiro emprego e trabalhos freelance.",
+      "dimensoes": {
+        "logica": 0.5,
+        "matematica": 0.0,
+        "codigo": 0.85,
+        "sistemas": 0.25,
+        "visual": 0.45,
+        "usabilidade": 0.4,
+        "dados": 0.0,
+        "eng_dados": -0.1,
+        "infra": -0.1,
+        "automacao": 0.05,
+        "seguranca": 0.0,
+        "qualidade": 0.3,
+        "produto": 0.1,
+        "comunicacao": 0.1,
+        "mobile": 1.0,
+        "nuvem": 0.0,
+        "plantao": -0.05
+      },
+      "eixos": {
+        "programacao": 0.8,
+        "dados": 0.15,
+        "visual": 0.55,
+        "infra": 0.1,
+        "seguranca": 0.05,
+        "qualidade": 0.4,
+        "produto": 0.3,
+        "mobile": 0.95
+      },
+      "competencias": [
+        {
+          "id": "logica_prog",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "react_native",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "api_rest",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "javascript",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "kotlin",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "swift",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "publicacao_loja",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "testes_unitarios",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "git",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Lógica e Git",
+        "JavaScript/TypeScript ou Dart",
+        "React Native ou Flutter",
+        "Consumo de APIs e armazenamento local",
+        "Testes e build",
+        "Publicação nas lojas"
+      ],
+      "certificacoes": [
+        {
+          "nome": "Meta React Native (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/meta-react-native",
+          "quando": "Cobre React Native com projeto final."
+        },
+        {
+          "nome": "Android Basics with Compose (Google)",
+          "custo": "gratuito",
+          "nivel": "iniciante",
+          "link": "https://developer.android.com/courses/android-basics-compose/course",
+          "quando": "Caminho oficial gratuito para Android nativo."
+        },
+        {
+          "nome": "Flutter – Codelabs oficiais",
+          "custo": "gratuito",
+          "nivel": "intermediario",
+          "link": "https://docs.flutter.dev/get-started/codelab",
+          "quando": "Alternativa multiplataforma com boa documentação."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "App de hábitos com notificações",
+          "descricao": "Aplicativo com armazenamento local, notificações e tela de progresso.",
+          "competencias": [
+            "react_native",
+            "publicacao_loja"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Publicar na loja (mesmo em teste interno) é o diferencial do portfólio mobile."
+        },
+        {
+          "titulo": "App consumindo API pública com offline",
+          "descricao": "Cache local, estados de carregamento, erro e sincronização.",
+          "competencias": [
+            "api_rest",
+            "javascript",
+            "testes_unitarios"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Tratamento de rede ruim é o que separa app amador de app profissional."
+        },
+        {
+          "titulo": "App com autenticação e push",
+          "descricao": "Login, sessão persistente e notificações push integradas.",
+          "competencias": [
+            "react_native",
+            "api_rest"
+          ],
+          "dificuldade": "alta",
+          "diferencial": "Cobre o conjunto que aparece em quase toda vaga júnior."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.7,
+        "volume_vagas": 0.55,
+        "salario_relativo": 0.7,
+        "remoto": 0.8,
+        "transicao": 0.7
+      },
+      "salario_junior": "R$ 3.000 – R$ 5.500",
+      "areas_atuacao": [
+        "Startups de consumo",
+        "Bancos digitais",
+        "Freelance",
+        "Varejo"
+      ]
+    },
+    {
+      "id": "qa",
+      "nome": "Engenharia de Qualidade e Testes (QA)",
+      "resumo": "Garante que o software funcione: planeja testes, automatiza e previne falhas.",
+      "descricao": "QA é uma das portas de entrada mais acessíveis em tecnologia: exige método, atenção a detalhes e comunicação. A evolução natural vai de testes manuais para automação e engenharia de qualidade, com forte demanda por quem programa testes.",
+      "dimensoes": {
+        "logica": 0.65,
+        "matematica": 0.1,
+        "codigo": 0.45,
+        "sistemas": 0.3,
+        "visual": 0.05,
+        "usabilidade": 0.2,
+        "dados": 0.15,
+        "eng_dados": 0.0,
+        "infra": 0.2,
+        "automacao": 0.45,
+        "seguranca": 0.15,
+        "qualidade": 1.0,
+        "produto": 0.1,
+        "comunicacao": 0.25,
+        "mobile": 0.0,
+        "nuvem": 0.05,
+        "plantao": 0.05
+      },
+      "eixos": {
+        "programacao": 0.6,
+        "dados": 0.3,
+        "visual": 0.25,
+        "infra": 0.35,
+        "seguranca": 0.25,
+        "qualidade": 0.95,
+        "produto": 0.25,
+        "mobile": 0.1
+      },
+      "competencias": [
+        {
+          "id": "testes_manuais",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "testes_api",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "automacao_testes",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "logica_prog",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "cypress",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "playwright",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "sql",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "testes_performance",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "ci_cd",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Fundamentos de teste e casos de teste",
+        "Testes de API (Postman/REST)",
+        "Lógica de programação",
+        "Automação com Cypress ou Playwright",
+        "CI/CD e testes em pipeline",
+        "Performance e acessibilidade"
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISTQB CTFL",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+          "quando": "Padrão internacional da área, cobrada em muitas vagas."
+        },
+        {
+          "nome": "Cypress – Test Automation University",
+          "custo": "gratuito",
+          "nivel": "intermediario",
+          "link": "https://testautomationu.applitools.com/cypress-tutorial/",
+          "quando": "Automação de ponta a ponta com prática guiada."
+        },
+        {
+          "nome": "Playwright (Microsoft Learn)",
+          "custo": "gratuito",
+          "nivel": "intermediario",
+          "link": "https://learn.microsoft.com/en-us/training/modules/build-with-playwright/",
+          "quando": "Ferramenta em alta no mercado."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Suíte de testes para API pública",
+          "descricao": "Casos de teste, automação com Postman/pytest e relatório de execução.",
+          "competencias": [
+            "testes_api",
+            "automacao_testes",
+            "logica_prog"
+          ],
+          "dificuldade": "baixa",
+          "diferencial": "Ideal como primeiro projeto: mostra método e organização."
+        },
+        {
+          "titulo": "Plano de testes de e-commerce fictício",
+          "descricao": "Estratégia, matriz de risco, casos manuais e evidências.",
+          "competencias": [
+            "testes_manuais",
+            "testes_api"
+          ],
+          "dificuldade": "baixa",
+          "diferencial": "Documentação de QA é exatamente o que se pede na primeira vaga."
+        },
+        {
+          "titulo": "Testes E2E com Cypress em app real",
+          "descricao": "Fluxos críticos automatizados, com page objects e execução em CI.",
+          "competencias": [
+            "cypress",
+            "ci_cd",
+            "automacao_testes"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Une automação e DevOps, combinação muito valorizada."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.9,
+        "volume_vagas": 0.75,
+        "salario_relativo": 0.6,
+        "remoto": 0.85,
+        "transicao": 0.88
+      },
+      "salario_junior": "R$ 2.500 – R$ 4.500",
+      "areas_atuacao": [
+        "Bancos",
+        "Consultorias",
+        "Software houses",
+        "Varejo"
+      ]
+    },
+    {
+      "id": "produto",
+      "nome": "Gestão de Produtos",
+      "resumo": "Decide o que construir, para quem e por quê, equilibrando negócio, usuários e técnica.",
+      "descricao": "Gestão de Produtos é a trilha menos técnica e mais relacional: descoberta, priorização, métricas e alinhamento com stakeholders. A entrada costuma ocorrer por estágio, migração de áreas de negócio ou de funções técnicas como QA e suporte.",
+      "dimensoes": {
+        "logica": 0.15,
+        "matematica": 0.0,
+        "codigo": -0.25,
+        "sistemas": 0.05,
+        "visual": 0.25,
+        "usabilidade": 0.55,
+        "dados": 0.35,
+        "eng_dados": -0.05,
+        "infra": -0.25,
+        "automacao": -0.05,
+        "seguranca": -0.05,
+        "qualidade": 0.0,
+        "produto": 1.0,
+        "comunicacao": 0.9,
+        "mobile": 0.05,
+        "nuvem": 0.0,
+        "plantao": -0.15
+      },
+      "eixos": {
+        "programacao": 0.2,
+        "dados": 0.5,
+        "visual": 0.5,
+        "infra": 0.1,
+        "seguranca": 0.1,
+        "qualidade": 0.15,
+        "produto": 0.95,
+        "mobile": 0.2
+      },
+      "competencias": [
+        {
+          "id": "discovery",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "roadmap_produto",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "metricas_produto",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "stakeholder",
+          "essencial": true,
+          "peso": 1.0,
+          "niveis": {
+            "estagio": 1,
+            "junior": 2,
+            "pleno": 3
+          }
+        },
+        {
+          "id": "scrum",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "analise_mercado",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "sql",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        },
+        {
+          "id": "figma",
+          "essencial": false,
+          "peso": 0.6,
+          "niveis": {
+            "estagio": 0,
+            "junior": 1,
+            "pleno": 2
+          }
+        }
+      ],
+      "tecnologias": [
+        "Discovery e entrevistas com usuários",
+        "Priorização e roadmap",
+        "Métricas de produto e experimentação",
+        "Scrum e refinamento de backlog",
+        "SQL e leitura de dados",
+        "Comunicação e gestão de stakeholders"
+      ],
+      "certificacoes": [
+        {
+          "nome": "Scrum.org PSPO I",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification",
+          "quando": "Certificação mais conhecida por recrutadores de produto."
+        },
+        {
+          "nome": "Google Project Management (Coursera)",
+          "custo": "medio",
+          "nivel": "iniciante",
+          "link": "https://www.coursera.org/professional-certificates/google-project-management",
+          "quando": "Boa base de planejamento e gestão."
+        },
+        {
+          "nome": "Métricas de produto (PM3)",
+          "custo": "gratuito",
+          "nivel": "iniciante",
+          "link": "https://pm3.com.br/",
+          "quando": "Conteúdo em português para começar sem custo."
+        }
+      ],
+      "projetos": [
+        {
+          "titulo": "Case de discovery com priorização",
+          "descricao": "Pesquisa com usuários, mapa de problemas, hipóteses e priorização RICE.",
+          "competencias": [
+            "discovery",
+            "roadmap_produto",
+            "stakeholder"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Portfólio de produto se faz com raciocínio documentado, não com tela bonita."
+        },
+        {
+          "titulo": "Especificação de produto com métricas",
+          "descricao": "Documento de visão, escopo, métricas de sucesso e roadmap de 3 fases.",
+          "competencias": [
+            "roadmap_produto",
+            "metricas_produto"
+          ],
+          "dificuldade": "baixa",
+          "diferencial": "Mostra clareza de escrita — competência central da função."
+        },
+        {
+          "titulo": "Análise de métricas em dataset aberto",
+          "descricao": "Funil, cohort e hipóteses de melhoria com dados reais.",
+          "competencias": [
+            "metricas_produto",
+            "sql"
+          ],
+          "dificuldade": "media",
+          "diferencial": "Prova que você decide com dados, não com opinião."
+        }
+      ],
+      "mercado": {
+        "entrada_junior": 0.5,
+        "volume_vagas": 0.5,
+        "salario_relativo": 0.85,
+        "remoto": 0.8,
+        "transicao": 0.6
+      },
+      "salario_junior": "R$ 4.000 – R$ 7.000",
+      "areas_atuacao": [
+        "Startups",
+        "Fintechs",
+        "Marketplaces",
+        "Empresas de SaaS"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,9 @@
 .venv/
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.ruff_cache/
 .streamlit/
+*.egg-info/
+plano-carreira*.md
+resultado-*.json

@@ -1,0 +1,35 @@
+{
+  "nome": "Diego (perfil negócios)",
+  "formacao": "graduacao_outra",
+  "experiencia": "ate_6m",
+  "objetivo": "transicao",
+  "modalidade": "hibrido",
+  "nivel_alvo": "junior",
+  "horas_semana": 8,
+  "prazo_meses": 6,
+  "respostas": {
+    "q_logica": 2,
+    "q_matematica": 2,
+    "q_codigo": 1,
+    "q_sistemas": 2,
+    "q_visual": 3,
+    "q_usabilidade": 4,
+    "q_dados": 3,
+    "q_eng_dados": 1,
+    "q_infra": 1,
+    "q_automacao": 1,
+    "q_seguranca": 1,
+    "q_qualidade": 2,
+    "q_produto": 5,
+    "q_comunicacao": 5,
+    "q_mobile": 2,
+    "q_nuvem": 1,
+    "q_plantao": 1
+  },
+  "conhecimentos": {
+    "discovery": 1,
+    "scrum": 2,
+    "stakeholder": 2,
+    "figma": 1
+  }
+}

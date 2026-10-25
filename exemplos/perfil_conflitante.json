@@ -1,0 +1,33 @@
+{
+  "nome": "Perfil conflitante (caso-limite)",
+  "formacao": "autodidata",
+  "experiencia": "ate_6m",
+  "objetivo": "freelance",
+  "modalidade": "remoto",
+  "nivel_alvo": "junior",
+  "horas_semana": 10,
+  "prazo_meses": 6,
+  "respostas": {
+    "q_logica": 2,
+    "q_matematica": 5,
+    "q_codigo": 2,
+    "q_sistemas": 3,
+    "q_visual": 5,
+    "q_usabilidade": 5,
+    "q_dados": 5,
+    "q_eng_dados": 2,
+    "q_infra": 5,
+    "q_automacao": 4,
+    "q_seguranca": 5,
+    "q_qualidade": 3,
+    "q_produto": 1,
+    "q_comunicacao": 1,
+    "q_mobile": 3,
+    "q_nuvem": 4,
+    "q_plantao": 4
+  },
+  "conhecimentos": {
+    "visualizacao": 1,
+    "redes": 1
+  }
+}

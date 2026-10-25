@@ -1,0 +1,1082 @@
+{
+  "versao": "2.0",
+  "descricao": "Catalogo de recursos gratuitos (ou de baixo custo) por competência, usado para montar o roadmap personalizado.",
+  "competencias": {
+    "logica_prog": {
+      "nome": "Lógica de programação",
+      "categoria": "fundamentos",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "CS50x - Introdução a Ciência da Computação (Harvard, gratuito)",
+          "url": "https://cs50.harvard.edu/x/",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "Beecrowd - exercicios de programação em portugues",
+          "url": "https://www.beecrowd.com.br/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Resolver 30 exercicios de estrutura de repetição e vetores sem consultar solução.",
+      "prerequisitos": []
+    },
+    "python": {
+      "nome": "Python",
+      "categoria": "linguagem",
+      "horas_base": 60,
+      "recursos": [
+        {
+          "titulo": "Tutorial oficial de Python (em portugues)",
+          "url": "https://docs.python.org/pt-br/3/tutorial/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "freeCodeCamp - Scientific Computing with Python",
+          "url": "https://www.freecodecamp.org/portuguese/learn/scientific-computing-with-python/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Construir um script de linha de comando que le um CSV, valida dados e gera um relatório.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "api_rest": {
+      "nome": "APIs REST",
+      "categoria": "backend",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Microsoft Learn - design de APIs REST",
+          "url": "https://learn.microsoft.com/pt-br/azure/architecture/best-practices/api-design",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "FastAPI - tutorial oficial",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Publicar uma API com CRUD, validação, paginação e documentação OpenAPI.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "sql": {
+      "nome": "SQL",
+      "categoria": "dados",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "SQLBolt - lições interativas",
+          "url": "https://sqlbolt.com/",
+          "tipo": "prática"
+        },
+        {
+          "titulo": "PGExercises - exercicios com PostgreSQL",
+          "url": "https://pgexercises.com/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Escrever 15 consultas com JOIN, GROUP BY e subquery em uma base real.",
+      "prerequisitos": []
+    },
+    "modelagem_dados": {
+      "nome": "Modelagem de dados",
+      "categoria": "dados",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "Tecnicas de modelagem dimensional (Kimball Group)",
+          "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+          "tipo": "artigo"
+        },
+        {
+          "titulo": "Microsoft Learn - guia de modelagem de dados",
+          "url": "https://learn.microsoft.com/pt-br/azure/architecture/data-guide/relational-data/data-warehousing",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Modelar um domínio (ex.: biblioteca) em 3a forma normal e em star schema, comparando os dois.",
+      "prerequisitos": [
+        "sql"
+      ]
+    },
+    "testes_unitarios": {
+      "nome": "Testes unitários",
+      "categoria": "qualidade",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "pytest - documentação oficial",
+          "url": "https://docs.pytest.org/en/stable/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Test Automation University - fundamentos de teste",
+          "url": "https://testautomationu.applitools.com/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Cobrir as regras de negócio de um projeto próprio com testes e medir cobertura.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "git": {
+      "nome": "Git e GitHub",
+      "categoria": "fundamentos",
+      "horas_base": 8,
+      "recursos": [
+        {
+          "titulo": "Pro Git (livro gratuito, em portugues)",
+          "url": "https://git-scm.com/book/pt-br/v2",
+          "tipo": "livro"
+        },
+        {
+          "titulo": "GitHub Skills - cursos praticos",
+          "url": "https://skills.github.com/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Trabalhar em branch, abrir pull request e resolver um conflito de merge.",
+      "prerequisitos": []
+    },
+    "docker": {
+      "nome": "Docker",
+      "categoria": "infraestrutura",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "Docker - guia de primeiros passos",
+          "url": "https://docs.docker.com/get-started/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Play with Docker - laboratório no navegador",
+          "url": "https://labs.play-with-docker.com/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Containerizar um projeto próprio com Dockerfile e docker compose.",
+      "prerequisitos": [
+        "linux"
+      ]
+    },
+    "bancos_nosql": {
+      "nome": "Bancos NoSQL",
+      "categoria": "dados",
+      "horas_base": 12,
+      "recursos": [
+        {
+          "titulo": "MongoDB - primeiros passos",
+          "url": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Redis - documentação",
+          "url": "https://redis.io/docs/latest/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Modelar o mesmo domínio em documento e em chave-valor, justificando a escolha.",
+      "prerequisitos": [
+        "modelagem_dados"
+      ]
+    },
+    "html_css": {
+      "nome": "HTML e CSS",
+      "categoria": "frontend",
+      "horas_base": 30,
+      "recursos": [
+        {
+          "titulo": "MDN - Aprender desenvolvimento web",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Learn",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "CSS Tricks - guia de Flexbox",
+          "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Reproduzir uma tela real sem framework, com layout responsivo.",
+      "prerequisitos": []
+    },
+    "javascript": {
+      "nome": "JavaScript",
+      "categoria": "linguagem",
+      "horas_base": 50,
+      "recursos": [
+        {
+          "titulo": "javascript.info - tutorial moderno",
+          "url": "https://javascript.info/",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "MDN - Guia de JavaScript",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Consumir uma API publica com fetch, tratando carregamento, erro e vazio.",
+      "prerequisitos": []
+    },
+    "typescript": {
+      "nome": "TypeScript",
+      "categoria": "linguagem",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Tipar um projeto JavaScript existente sem usar any.",
+      "prerequisitos": [
+        "javascript"
+      ]
+    },
+    "react": {
+      "nome": "React",
+      "categoria": "frontend",
+      "horas_base": 50,
+      "recursos": [
+        {
+          "titulo": "React - Learn (documentação oficial)",
+          "url": "https://react.dev/learn",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "freeCodeCamp - Front End Development Libraries",
+          "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Construir uma aplicação com rotas, formularios e estado compartilhado.",
+      "prerequisitos": [
+        "javascript",
+        "html_css"
+      ]
+    },
+    "figma": {
+      "nome": "Figma",
+      "categoria": "design",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Figma Help Center - primeiros passos",
+          "url": "https://help.figma.com/hc/en-us/categories/360002051613-Getting-started",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Prototipar um fluxo de 4 telas com componentes reutilizaveis.",
+      "prerequisitos": []
+    },
+    "ux_pesquisa": {
+      "nome": "Pesquisa com usuários (UX)",
+      "categoria": "design",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "Nielsen Norman Group - artigos de UX",
+          "url": "https://www.nngroup.com/articles/",
+          "tipo": "artigo"
+        },
+        {
+          "titulo": "NN/g - UX research cheat sheet",
+          "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Fazer 5 entrevistas curtas sobre um problema real e sintetizar em um mapa de afinidade.",
+      "prerequisitos": []
+    },
+    "acessibilidade": {
+      "nome": "Acessibilidade (WCAG)",
+      "categoria": "frontend",
+      "horas_base": 12,
+      "recursos": [
+        {
+          "titulo": "W3C - WCAG 2.2 Quick Reference",
+          "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "MDN - Acessibilidade",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/Accessibility",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Auditar um site próprio com teclado e leitor de tela, listando 5 correções.",
+      "prerequisitos": [
+        "html_css"
+      ]
+    },
+    "design_system": {
+      "nome": "Design system",
+      "categoria": "frontend",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Atomic Design (Brad Frost, livro online)",
+          "url": "https://atomicdesign.bradfrost.com/",
+          "tipo": "livro"
+        },
+        {
+          "titulo": "Storybook - tutorial oficial",
+          "url": "https://storybook.js.org/tutorials/intro-to-storybook/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Publicar 8 componentes documentados com estados e testes visuais.",
+      "prerequisitos": [
+        "html_css"
+      ]
+    },
+    "estatistica": {
+      "nome": "Estatística e probabilidade",
+      "categoria": "dados",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Seeing Theory - estatística visual",
+          "url": "https://seeing-theory.brown.edu/",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "Khan Academy - estatística e probabilidade",
+          "url": "https://www.khanacademy.org/math/statistics-probability",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Explicar, com dados próprios, a diferenca entre media, mediana e intervalo de confianca.",
+      "prerequisitos": []
+    },
+    "pandas": {
+      "nome": "Pandas",
+      "categoria": "dados",
+      "horas_base": 30,
+      "recursos": [
+        {
+          "titulo": "Pandas - guia de 10 minutos",
+          "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Kaggle Learn - Pandas",
+          "url": "https://www.kaggle.com/learn/pandas",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Limpar uma base suja de ponta a ponta e documentar cada decisao.",
+      "prerequisitos": [
+        "python"
+      ]
+    },
+    "machine_learning": {
+      "nome": "Machine Learning",
+      "categoria": "dados",
+      "horas_base": 60,
+      "recursos": [
+        {
+          "titulo": "scikit-learn - getting started",
+          "url": "https://scikit-learn.org/stable/getting_started.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Google - Machine Learning Crash Course",
+          "url": "https://developers.google.com/machine-learning/crash-course",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Treinar, validar e comparar 3 modelos com discussão de métricas e viés.",
+      "prerequisitos": [
+        "python",
+        "estatística"
+      ]
+    },
+    "visualizacao": {
+      "nome": "Visualização de dados",
+      "categoria": "dados",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "Matplotlib - tutoriais",
+          "url": "https://matplotlib.org/stable/tutorials/index.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Seaborn - tutorial",
+          "url": "https://seaborn.pydata.org/tutorial.html",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Transformar uma análise em 3 graficos com conclusao escrita em uma frase cada.",
+      "prerequisitos": [
+        "python"
+      ]
+    },
+    "spark": {
+      "nome": "Apache Spark",
+      "categoria": "dados",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "Spark - quick start",
+          "url": "https://spark.apache.org/docs/latest/quick-start.html",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Processar um arquivo grande com PySpark e comparar tempo com pandas.",
+      "prerequisitos": [
+        "python",
+        "sql"
+      ]
+    },
+    "airflow": {
+      "nome": "Apache Airflow",
+      "categoria": "dados",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Airflow - tutorial oficial",
+          "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Criar uma DAG com 3 tarefas, retries e dependencias claras.",
+      "prerequisitos": [
+        "python",
+        "sql"
+      ]
+    },
+    "data_warehouse": {
+      "nome": "Data warehouse",
+      "categoria": "dados",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "Microsoft Learn - data warehousing",
+          "url": "https://learn.microsoft.com/pt-br/azure/architecture/data-guide/relational-data/data-warehousing",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "dbt - guia de modelos",
+          "url": "https://docs.getdbt.com/docs/build/models",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Montar camadas bronze/prata/ouro com criterios de qualidade documentados.",
+      "prerequisitos": [
+        "sql",
+        "modelagem_dados"
+      ]
+    },
+    "dbt": {
+      "nome": "dbt",
+      "categoria": "dados",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "dbt - introdução",
+          "url": "https://docs.getdbt.com/docs/introduction",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Modelar 5 tabelas com testes de unicidade e relacionamento.",
+      "prerequisitos": [
+        "sql"
+      ]
+    },
+    "redes": {
+      "nome": "Redes",
+      "categoria": "infraestrutura",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Cloudflare Learning - fundamentos de rede",
+          "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+          "tipo": "artigo"
+        },
+        {
+          "titulo": "Linux Journey - networking",
+          "url": "https://linuxjourney.com/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Diagnosticar uma conexao com ping, traceroute, dig e tcpdump.",
+      "prerequisitos": []
+    },
+    "linux": {
+      "nome": "Linux",
+      "categoria": "infraestrutura",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Linux Journey (gratuito)",
+          "url": "https://linuxjourney.com/",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "The Linux Command Line (livro gratuito)",
+          "url": "https://linuxcommand.org/tlcl.php",
+          "tipo": "livro"
+        }
+      ],
+      "pratica": "Administrar uma VM: usuários, permissões, serviços e logs.",
+      "prerequisitos": []
+    },
+    "iam": {
+      "nome": "Gestão de identidade e acesso",
+      "categoria": "seguranca",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "AWS IAM - guia do usuário",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "OWASP - controle de acesso quebrado",
+          "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Aplicar principio do menor privilegio em um ambiente de laboratório.",
+      "prerequisitos": []
+    },
+    "analise_risco": {
+      "nome": "Análise de risco",
+      "categoria": "seguranca",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "NIST SP 800-30 - guia de avaliação de risco",
+          "url": "https://csrc.nist.gov/pubs/sp/800/30/r1/final",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Montar uma matriz de risco (probabilidade x impacto) para um sistema ficticio.",
+      "prerequisitos": []
+    },
+    "criptografia": {
+      "nome": "Criptografia aplicada",
+      "categoria": "seguranca",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Crypto101 (livro gratuito)",
+          "url": "https://www.crypto101.io/",
+          "tipo": "livro"
+        },
+        {
+          "titulo": "CryptoHack - desafios",
+          "url": "https://cryptohack.org/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Explicar TLS, hash e assinatura digital com um exemplo pratico cada.",
+      "prerequisitos": [
+        "redes"
+      ]
+    },
+    "pentest": {
+      "nome": "Testes de invasão",
+      "categoria": "seguranca",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "OWASP Web Security Testing Guide",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "TryHackMe - trilhas iniciantes",
+          "url": "https://tryhackme.com/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Resolver um laboratório e escrever relatório com impacto e correção.",
+      "prerequisitos": [
+        "redes",
+        "linux"
+      ]
+    },
+    "siem": {
+      "nome": "SIEM e resposta a incidentes",
+      "categoria": "seguranca",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "Wazuh - quickstart",
+          "url": "https://documentation.wazuh.com/current/quickstart.html",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Criar 3 regras de detecção e simular o incidente correspondente.",
+      "prerequisitos": [
+        "redes",
+        "linux"
+      ]
+    },
+    "normas_iso": {
+      "nome": "ISO 27001 / LGPD",
+      "categoria": "seguranca",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "ISO/IEC 27001 - visao geral",
+          "url": "https://www.iso.org/isoiec-27001-information-security.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "ANPD - LGPD",
+          "url": "https://www.gov.br/anpd/pt-br",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Mapear 10 controles da ISO 27001 para um sistema real e apontar lacunas.",
+      "prerequisitos": []
+    },
+    "kubernetes": {
+      "nome": "Kubernetes",
+      "categoria": "infraestrutura",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Kubernetes - tutoriais (pt-BR)",
+          "url": "https://kubernetes.io/pt-br/docs/tutorials/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Killercoda - laboratórios de Kubernetes",
+          "url": "https://killercoda.com/kubernetes",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Publicar uma aplicação com Deployment, Service, ConfigMap e limites de recursos.",
+      "prerequisitos": [
+        "docker",
+        "linux"
+      ]
+    },
+    "ci_cd": {
+      "nome": "CI/CD",
+      "categoria": "infraestrutura",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "GitHub Actions - quickstart",
+          "url": "https://docs.github.com/pt/actions/quickstart",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "GitHub Skills - CI",
+          "url": "https://skills.github.com/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Pipeline com lint, testes e build rodando em pull request.",
+      "prerequisitos": [
+        "git"
+      ]
+    },
+    "terraform": {
+      "nome": "Terraform (IaC)",
+      "categoria": "infraestrutura",
+      "horas_base": 24,
+      "recursos": [
+        {
+          "titulo": "HashiCorp - tutoriais de Terraform",
+          "url": "https://developer.hashicorp.com/terraform/tutorials",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Provisionar um ambiente pequeno e destrui-lo com um comando.",
+      "prerequisitos": [
+        "linux",
+        "redes"
+      ]
+    },
+    "observabilidade": {
+      "nome": "Observabilidade",
+      "categoria": "infraestrutura",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "OpenTelemetry - observability primer",
+          "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Prometheus - overview",
+          "url": "https://prometheus.io/docs/introduction/overview/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Instrumentar uma API com métricas, logs estruturados e um alerta.",
+      "prerequisitos": [
+        "docker"
+      ]
+    },
+    "bash": {
+      "nome": "Shell script",
+      "categoria": "infraestrutura",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "GNU Bash Reference Manual",
+          "url": "https://www.gnu.org/software/bash/manual/bash.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "ExplainShell - entender comandos",
+          "url": "https://explainshell.com/",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Automatizar backup e rotação de logs com script idempotente.",
+      "prerequisitos": [
+        "linux"
+      ]
+    },
+    "aws": {
+      "nome": "AWS",
+      "categoria": "nuvem",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "AWS - treinamentos gratuitos",
+          "url": "https://aws.amazon.com/pt/getting-started/training/",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "AWS Skill Builder - fundamentos",
+          "url": "https://skillbuilder.aws/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Subir uma aplicação com compute, banco gerenciado e IAM em conta gratuita.",
+      "prerequisitos": [
+        "redes"
+      ]
+    },
+    "azure": {
+      "nome": "Azure",
+      "categoria": "nuvem",
+      "horas_base": 30,
+      "recursos": [
+        {
+          "titulo": "Microsoft Learn - treinamento Azure",
+          "url": "https://learn.microsoft.com/pt-br/training/azure/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Publicar um App Service com banco gerenciado e monitoramento.",
+      "prerequisitos": [
+        "redes"
+      ]
+    },
+    "gcp": {
+      "nome": "Google Cloud",
+      "categoria": "nuvem",
+      "horas_base": 30,
+      "recursos": [
+        {
+          "titulo": "Google Cloud - treinamento",
+          "url": "https://cloud.google.com/learn/training",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Publicar Cloud Run com Cloud SQL e alertas de orçamento.",
+      "prerequisitos": [
+        "redes"
+      ]
+    },
+    "react_native": {
+      "nome": "React Native",
+      "categoria": "mobile",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "React Native - getting started",
+          "url": "https://reactnative.dev/docs/getting-started",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Publicar um app com 3 telas, navegação e consumo de API.",
+      "prerequisitos": [
+        "javascript",
+        "api_rest"
+      ]
+    },
+    "kotlin": {
+      "nome": "Kotlin (Android)",
+      "categoria": "mobile",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Android - Kotlin para desenvolvedores",
+          "url": "https://developer.android.com/kotlin/learn",
+          "tipo": "curso"
+        },
+        {
+          "titulo": "Kotlin - getting started",
+          "url": "https://kotlinlang.org/docs/getting-started.html",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Criar um app nativo com Compose e persistência local.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "swift": {
+      "nome": "Swift (iOS)",
+      "categoria": "mobile",
+      "horas_base": 40,
+      "recursos": [
+        {
+          "titulo": "Apple - SwiftUI tutorials",
+          "url": "https://developer.apple.com/tutorials/swiftui",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Criar um app com SwiftUI e persistência em arquivo.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "publicacao_loja": {
+      "nome": "Publicação em lojas de apps",
+      "categoria": "mobile",
+      "horas_base": 8,
+      "recursos": [
+        {
+          "titulo": "Android - publicar seu app",
+          "url": "https://developer.android.com/studio/publish",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Apple - submeter app a App Store",
+          "url": "https://developer.apple.com/app-store/submitting/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Publicar uma versao em teste interno e documentar o processo.",
+      "prerequisitos": [
+        "react_native"
+      ]
+    },
+    "testes_manuais": {
+      "nome": "Testes manuais e casos de teste",
+      "categoria": "qualidade",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "ISTQB - Certified Tester Foundation Level",
+          "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+          "tipo": "certificação"
+        }
+      ],
+      "pratica": "Escrever 20 casos de teste com passos, dados e resultado esperado.",
+      "prerequisitos": []
+    },
+    "testes_api": {
+      "nome": "Testes de API",
+      "categoria": "qualidade",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "Postman - documentação de testes",
+          "url": "https://learning.postman.com/docs/getting-started/introduction/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Testar uma API publica cobrindo status, contrato e casos de erro.",
+      "prerequisitos": []
+    },
+    "automacao_testes": {
+      "nome": "Automação de testes",
+      "categoria": "qualidade",
+      "horas_base": 32,
+      "recursos": [
+        {
+          "titulo": "Test Automation University (cursos gratuitos)",
+          "url": "https://testautomationu.applitools.com/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Automatizar 10 casos com page objects e rodar em pipeline.",
+      "prerequisitos": [
+        "lógica_prog"
+      ]
+    },
+    "cypress": {
+      "nome": "Cypress",
+      "categoria": "qualidade",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Cypress - documentação oficial",
+          "url": "https://docs.cypress.io/",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Test Automation University - Cypress",
+          "url": "https://testautomationu.applitools.com/cypress-tutorial/",
+          "tipo": "curso"
+        }
+      ],
+      "pratica": "Cobrir o fluxo de compra de um e-commerce ficticio.",
+      "prerequisitos": [
+        "javascript",
+        "automação_testes"
+      ]
+    },
+    "playwright": {
+      "nome": "Playwright",
+      "categoria": "qualidade",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Playwright - introdução",
+          "url": "https://playwright.dev/docs/intro",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Automatizar login e fluxo principal com gravação de trace.",
+      "prerequisitos": [
+        "javascript",
+        "automação_testes"
+      ]
+    },
+    "testes_performance": {
+      "nome": "Testes de performance",
+      "categoria": "qualidade",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "Grafana k6 - documentação",
+          "url": "https://grafana.com/docs/k6/latest/",
+          "tipo": "documentação"
+        }
+      ],
+      "pratica": "Executar teste de carga em uma API e interpretar p95 e taxa de erro.",
+      "prerequisitos": [
+        "testes_api"
+      ]
+    },
+    "discovery": {
+      "nome": "Discovery de produto",
+      "categoria": "produto",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Product Talk - Teresa Torres",
+          "url": "https://www.producttalk.org/",
+          "tipo": "artigo"
+        },
+        {
+          "titulo": "NN/g - UX research cheat sheet",
+          "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Entrevistar 5 pessoas e transformar em oportunidades priorizadas.",
+      "prerequisitos": []
+    },
+    "roadmap_produto": {
+      "nome": "Roadmap e priorização",
+      "categoria": "produto",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "ProductPlan - guia de roadmap",
+          "url": "https://www.productplan.com/learn/product-roadmap/",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Priorizar 10 iniciativas com RICE e justificar a ordem.",
+      "prerequisitos": [
+        "discovery"
+      ]
+    },
+    "metricas_produto": {
+      "nome": "Métricas de produto",
+      "categoria": "produto",
+      "horas_base": 20,
+      "recursos": [
+        {
+          "titulo": "Mixpanel - guia de métricas",
+          "url": "https://mixpanel.com/blog/",
+          "tipo": "artigo"
+        },
+        {
+          "titulo": "Amplitude - North Star metrics",
+          "url": "https://amplitude.com/blog/product-metrics",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Definir 5 métricas para um produto e montar o funil em dados abertos.",
+      "prerequisitos": [
+        "sql"
+      ]
+    },
+    "stakeholder": {
+      "nome": "Gestão de stakeholders",
+      "categoria": "produto",
+      "horas_base": 16,
+      "recursos": [
+        {
+          "titulo": "Atlassian Team Playbook",
+          "url": "https://www.atlassian.com/team-playbook",
+          "tipo": "prática"
+        }
+      ],
+      "pratica": "Mapear stakeholders de um projeto ficticio e definir plano de comunicação.",
+      "prerequisitos": []
+    },
+    "scrum": {
+      "nome": "Scrum e métodos ágeis",
+      "categoria": "produto",
+      "horas_base": 12,
+      "recursos": [
+        {
+          "titulo": "Scrum Guide (oficial)",
+          "url": "https://scrumguides.org/scrum-guide.html",
+          "tipo": "documentação"
+        },
+        {
+          "titulo": "Atlassian - Agile coach",
+          "url": "https://www.atlassian.com/agile",
+          "tipo": "artigo"
+        }
+      ],
+      "pratica": "Escrever backlog com historias, criterios de aceite e definição de pronto.",
+      "prerequisitos": []
+    },
+    "analise_mercado": {
+      "nome": "Análise de mercado",
+      "categoria": "produto",
+      "horas_base": 12,
+      "recursos": [
+        {
+          "titulo": "Google Trends",
+          "url": "https://trends.google.com/",
+          "tipo": "prática"
+        },
+        {
+          "titulo": "IBGE - pesquisas e indicadores",
+          "url": "https://www.ibge.gov.br/",
+          "tipo": "dados"
+        }
+      ],
+      "pratica": "Comparar 3 concorrentes com dados publicos e escrever uma recomendação.",
+      "prerequisitos": []
+    }
+  }
+}

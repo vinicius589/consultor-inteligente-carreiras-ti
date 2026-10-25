@@ -1,0 +1,35 @@
+{
+  "nome": "Elisa (perfil segurança)",
+  "formacao": "autodidata",
+  "experiencia": "6m_2a",
+  "objetivo": "especializacao",
+  "modalidade": "presencial",
+  "nivel_alvo": "junior",
+  "horas_semana": 20,
+  "prazo_meses": 12,
+  "respostas": {
+    "q_logica": 4,
+    "q_matematica": 3,
+    "q_codigo": 3,
+    "q_sistemas": 4,
+    "q_visual": 1,
+    "q_usabilidade": 1,
+    "q_dados": 2,
+    "q_eng_dados": 1,
+    "q_infra": 5,
+    "q_automacao": 3,
+    "q_seguranca": 5,
+    "q_qualidade": 3,
+    "q_produto": 1,
+    "q_comunicacao": 2,
+    "q_mobile": 1,
+    "q_nuvem": 3,
+    "q_plantao": 4
+  },
+  "conhecimentos": {
+    "redes": 2,
+    "linux": 2,
+    "python": 1,
+    "criptografia": 1
+  }
+}

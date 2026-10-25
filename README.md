@@ -1,167 +1,193 @@
-# 🧭 Consultor Inteligente de Carreiras em TI
+﻿# 🧭 Consultor Inteligente de Carreiras em TI
 
-Sistema especialista acadêmico desenvolvido em **Python** para a disciplina de Inteligência Artificial da **UNIPAC Barbacena**. A aplicação faz perguntas sobre interesses e preferências do usuário e recomenda uma trilha profissional em Tecnologia da Informação, explicando os motivos da indicação.
+**Sistema especialista com raciocínio ponderado, tratamento de incerteza e plano de carreira personalizado.**
 
-**Tecnologias:** Python · Experta · Streamlit · unittest · Git/GitHub
+Projeto acadêmico da disciplina de **Inteligência Artificial — UNIPAC Barbacena**.
+A aplicação analisa o perfil do estudante em 17 perguntas de afinidade (escala 1–5), compara com **10 trilhas
+de tecnologia**, calcula um ranking percentual, identifica **lacunas de competência** e monta um **roadmap**
+com recursos gratuitos, certificações e projetos de portfólio.
 
-## 📄 Documento técnico
+`Python 3.10+` · `Streamlit` · `Plotly` · `pytest` · base de conhecimento 100% em JSON
 
-O repositório também inclui o [Documento Técnico do Consultor Inteligente de Carreiras em TI (PDF)](docs/Documento_Tecnico_Consultor_Inteligente_Carreiras_TI.pdf), com visão geral, arquitetura, funcionamento das regras, quatro validações por personas (analítico, infraestrutura/segurança, front-end e negócios/produto), exemplos visuais de resultados, instruções de execução e testes.
+---
 
-## 👀 Demonstração visual
+## 🎯 O que o sistema faz
 
-### Tela inicial
+| Etapa | Resultado |
+|---|---|
+| **Perfil em 3 passos** | dados pessoais, 17 afinidades técnicas, objetivos e conhecimentos atuais |
+| **Ranking ponderado** | Top 3 com percentual de aderência + ranking completo das 10 trilhas |
+| **Tratamento de incerteza** | fatores de certeza (MYCIN), penalidades para perfis contraditórios, bônus para combinações coerentes |
+| **Empate técnico** | quando as duas primeiras ficam a menos de 2,5 pontos, o sistema avisa, mostra a pergunta que mais as separa e sugere um teste prático |
+| **Análise de lacunas** | compara seu conhecimento (0–3) com o exigido para estágio, júnior ou pleno |
+| **Roadmap** | 3 fases, respeitando pré-requisitos, com links gratuitos, entregáveis e estimativa de horas/semanas |
+| **Portfólio e certificação** | projetos escolhidos pelo quanto cobrem suas lacunas + certificações por custo e nível |
+| **Exportação** | plano completo em Markdown e resultado estruturado em JSON |
 
-A interface coleta cinco respostas: afinidade com matemática, atividade de maior interesse, ferramenta ou linguagem, tipo de resultado desejado e ambiente de trabalho.
+---
 
-![Prévia da tela inicial do Consultor de Carreiras](assets/tela-inicial.svg)
+## 🧠 Como o cálculo funciona
 
-## 🧪 Validação com quatro personas
+O motor tem quatro camadas, todas parametrizadas por `data/*.json`:
 
-A Atividade Aula 08 pede a validação com pelo menos quatro perfis distintos. O repositório tem testes em `tests/test_personas.py` para estes cenários, cujas respostas esperadas são conferidas pelo código de teste.
+1. **Soma ponderada** — cada resposta `r` vira `a = (r − 1)/4` e é multiplicada pelo peso da pergunta em cada
+   trilha (`w` pode ser negativo: matemática alta afasta Front-end, por exemplo).
+2. **Normalização por faixa** — a pontuação bruta é comparada com o mínimo e o máximo alcançáveis *daquela*
+   trilha, gerando uma força de 0 a 1.
+3. **Fatores de certeza (MYCIN)** — as evidências de cada pergunta são combinadas (`cf1 + cf2(1 − cf1)` para
+   positivas, `cf1 + cf2(1 + cf1)` para negativas, `(cf1 + cf2)/(1 − min)` para opostas), medindo a
+   consistência do perfil.
+4. **Regras de conflito e contexto** — 16 penalidades, 10 bônus e ajustes de objetivo/modalidade multiplicam a
+   força; o percentual final aplica a calibração `100 × 0,97 × G^0,70`.
 
-### 1. Perfil analítico — Ciência de Dados e Machine Learning
+O detalhamento matemático completo está no [relatório técnico](docs/relatorio-tecnico.md).
 
-- **Entradas:** matemática alta, análise de dados, Python, análises para apoiar decisões e interesse por dados e pesquisa.
-- **Resultado esperado:** Ciência de Dados e Machine Learning — **8 pontos**.
+---
 
-![Resultado ilustrativo da persona analítica](assets/persona-analitica.svg)
+## 📊 Resultados de validação
 
-### 2. Perfil de infraestrutura e segurança — Cibersegurança
+Saída real de `python tools/benchmark.py` (tabela completa em [docs/resultados-validacao.md](docs/resultados-validacao.md)):
 
-- **Entradas:** matemática média, investigação de riscos e vulnerabilidades, Linux e redes, proteção contra ameaças e ambiente de segurança.
-- **Resultado esperado:** Cibersegurança — **10 pontos**.
+| Perfil | 1º lugar | % | 2º lugar | % | Margem | Confiança |
+|---|---|---|---|---|---|---|
+| Analítico (matemática + dados) | Ciência de Dados e ML | 86,1% | Back-end | 79,6% | 6,5 | média |
+| Visual (design + interface) | Front-end & UI/UX | 89,1% | Mobile | 81,7% | 7,4 | alta |
+| Infraestrutura (Linux + automação) | DevOps & SRE | 91,5% | Arquitetura em Nuvem | 88,5% | 3,0 | média |
+| Segurança (redes + defesa) | Cibersegurança | 84,6% | DevOps & SRE | 76,1% | 8,5 | alta |
+| Negócios (produto + comunicação) | Gestão de Produtos | 91,8% | Front-end | 59,2% | 32,6 | alta |
+| Back-end (lógica + código) | Back-end | 83,9% | QA | 70,9% | 13,0 | alta |
 
-![Resultado ilustrativo da persona de infraestrutura e segurança](assets/persona-infra-seguranca.svg)
+**Casos-limite também são testados:**
 
-### 3. Perfil visual/front-end — Desenvolvimento Front-end e UI/UX
+- **Perfil neutro** (todas as respostas 3): todos os percentuais entre 59% e 61%, empate declarado,
+  confiança 0,02 e mensagem explícita de que o resultado é uma hipótese inicial.
+- **Perfil contraditório** (design + infraestrutura + matemática no máximo): Dados 75,9% × Segurança 75,8%,
+  margem de 0,1 ponto → empate detectado e teste de desempate sugerido.
 
-- **Entradas:** matemática baixa, criação de interfaces, JavaScript, produto/interface para o usuário e desenvolvimento de software.
-- **Resultado esperado:** Desenvolvimento Front-end & UI/UX — **6 pontos**.
+---
 
-![Resultado ilustrativo da persona visual e front-end](assets/persona-visual-frontend.svg)
-
-### 4. Perfil de negócios/produto — Gestão de Produtos
-
-- **Entradas:** planejamento de produtos, ferramentas de design e prototipação, priorização e interesse por negócio e usuários.
-- **Resultado esperado:** Gestão de Produtos — **11 pontos**.
-
-![Resultado ilustrativo da persona de negócios e produto](assets/persona-negocios-produto.svg)
-
-> **Nota sobre as imagens:** estas são visualizações demonstrativas montadas a partir das entradas dos testes existentes e das justificativas/regras no código. Não são capturas nativas de uma execução real do Streamlit. Para anexar evidência de execução real, abra a aplicação localmente, execute cada perfil e tire os prints do navegador.
-
-
-## 💡 O que o sistema faz
-
-- Apresenta cinco perguntas sobre o perfil e os interesses profissionais.
-- Aplica regras lógicas implementadas com **Experta**.
-- Soma os pontos das regras ativadas para cada carreira.
-- Exibe uma trilha recomendada, sua descrição, as justificativas e a pontuação.
-- Permite consultar outras trilhas consideradas.
-- Inclui testes automatizados para verificar cenários de perfil.
-
-O motor de inferência contém **38 regras** (incluindo combinações de características do perfil) e considera dez trilhas profissionais:
-
-1. Desenvolvimento Back-end
-2. Desenvolvimento Front-end e UI/UX
-3. Ciência de Dados e Machine Learning
-4. Engenharia de Dados
-5. Cibersegurança
-6. DevOps e SRE
-7. Computação em Nuvem
-8. Desenvolvimento Mobile
-9. Engenharia de Qualidade e Testes (QA)
-10. Gestão de Produtos
-
-## ▶️ Como executar no Windows
-
-### 1. Requisitos
-
-- **Python 3.10** é a versão recomendada para favorecer a compatibilidade com a biblioteca Experta.
-- **Git** instalado no computador.
-
-Para verificar as instalações, abra o PowerShell e execute:
-
-```powershell
-python --version
-git --version
-```
-
-### 2. Baixar o projeto
+## ▶️ Como executar (Windows)
 
 ```powershell
 git clone https://github.com/vinicius589/consultor-inteligente-carreiras-ti.git
 cd consultor-inteligente-carreiras-ti
-```
 
-### 3. Criar e ativar o ambiente virtual
-
-```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-Se o PowerShell bloquear a ativação, você pode permitir scripts somente nessa sessão com `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` e tentar novamente. Outra opção é executar os comandos seguintes usando diretamente `.\.venv\Scripts\python.exe`.
-
-### 4. Instalar as dependências
-
-Com o ambiente virtual ativado:
-
-```powershell
+.\.venv\Scripts\Activate.ps1      # se bloquear: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+
+python -m streamlit run app.py    # abre em http://localhost:8501
 ```
 
-### 5. Iniciar a aplicação
+### Linha de comando (sem interface)
 
 ```powershell
-python -m streamlit run app.py
+python main.py --perfil exemplos\perfil_devops.json --saida plano.md --json resultado.json
 ```
 
-O Streamlit informa no terminal o endereço local. Normalmente, é:
+Saída no terminal:
 
-**http://localhost:8501**
+```
+   1. DevOps & SRE                            91.5%  ← recomendada
+   2. Arquitetura em Nuvem                    88.5%
+   3. Cibersegurança                          85.0%
+```
 
-Abra esse endereço no navegador. Responda às cinco perguntas e clique em **Analisar meu perfil** para ver a recomendação e as justificativas.
-
-![Ilustração dos comandos para executar o projeto no Windows](assets/execucao-windows.svg)
-
-Para encerrar a aplicação, volte ao terminal e pressione `Ctrl + C`.
-
-## 🧪 Executar os testes
-
-Na pasta do projeto, com as dependências instaladas, execute:
+### Testes
 
 ```powershell
-python -m unittest discover -s tests -v
+python -m pytest                  # 55 testes, incluindo o wizard completo via AppTest
 ```
 
-Os testes estão em `tests/test_personas.py` e verificam perfis que representam as diferentes trilhas. Ao final, o `unittest` informa se as verificações passaram.
+### Ferramentas de apoio
 
-## 🧠 Como a recomendação é calculada
+```powershell
+python tools\benchmark.py --saida docs\resultados-validacao.md   # roda todos os perfis
+python tools\exportar_matriz.py --saida docs\matriz-de-pesos.md  # matriz perguntas × trilhas
+```
 
-1. A interface reúne as respostas do usuário em um perfil.
-2. O motor de inferência compara esse perfil com as regras `SE–ENTÃO`.
-3. Cada regra ativada registra uma evidência com carreira, pontos e justificativa.
-4. O sistema soma as evidências e seleciona a carreira com maior pontuação.
-5. O resultado mostra a descrição, os motivos e algumas alternativas.
+---
 
-A indicação é uma **orientação inicial** baseada nas respostas, não uma avaliação definitiva nem uma garantia de adequação profissional.
+## 🗂️ Base de conhecimento (sem código)
 
-## 📁 Estrutura principal
+Nenhum peso ou regra está no Python. Quatro arquivos compõem a base:
 
-| Arquivo | Função |
+| Arquivo | Conteúdo |
 |---|---|
-| `app.py` | Interface web feita com Streamlit |
-| `sistema_especialista.py` | Fatos, regras e motor de inferência Experta |
-| `matriz_de_decisao.md` | Resumo dos critérios usados nas recomendações |
-| `tests/test_personas.py` | Testes automatizados de perfis |
-| `requirements.txt` | Dependências do projeto |
-| `assets/` | Imagens demonstrativas usadas neste README |
+| `data/trilhas.json` | 10 trilhas: dimensões, eixos do radar, competências por senioridade, tecnologias, certificações, projetos, sinais de mercado |
+| `data/perguntas.json` | 3 etapas do formulário e as 17 perguntas com os pesos por trilha |
+| `data/regras.json` | penalidades, bônus, ajustes por objetivo/modalidade, níveis e calibração |
+| `data/recursos.json` | 57 competências com links gratuitos, horas-base, prática sugerida e pré-requisitos |
 
-## 🔗 Repositório
+O carregamento é **fail-fast**: id duplicado, peso apontando para trilha inexistente, competência sem recurso
+de estudo ou regra citando pergunta desconhecida interrompem a execução com mensagem clara — e há teste
+para cada um desses casos.
 
-Código-fonte: https://github.com/vinicius589/consultor-inteligente-carreiras-ti
+Para incluir uma trilha nova: acrescente o objeto em `trilhas.json`, adicione pesos nas 17 perguntas de
+`perguntas.json` e rode `python -m pytest`. A validação avisa exatamente o que falta.
+
+---
+
+## 🧱 Estrutura
+
+```
+.
+├── app.py                      # interface Streamlit (wizard em 3 etapas)
+├── main.py                     # entrada de linha de comando
+├── data/                       # base de conhecimento (JSON)
+│   ├── trilhas.json
+│   ├── perguntas.json
+│   ├── regras.json
+│   └── recursos.json
+├── src/consultor/
+│   ├── base_conhecimento.py    # carregamento e validação
+│   ├── motor.py                # soma ponderada + fatores de certeza + ranking
+│   ├── lacunas.py              # skill gap por senioridade
+│   ├── roadmap.py              # fases, certificações, portfólio
+│   ├── relatorio.py            # exportação Markdown/JSON
+│   └── cli.py                  # execução em lote
+├── exemplos/                   # 8 perfis (6 personas + 2 casos-limite)
+├── tests/                      # 55 testes (unidade, integração, interface)
+├── tools/                      # benchmark e exportação da matriz
+├── docs/                       # relatório técnico, matriz, validação, arquitetura
+└── legacy/                     # versão anterior (Experta, regras binárias)
+```
+
+![Arquitetura do sistema](docs/arquitetura.svg)
+
+---
+
+## 📚 Documentação
+
+- [Relatório técnico](docs/relatorio-tecnico.md) — modelagem, fórmulas, decisões de projeto, limitações
+- [Matriz de pesos](docs/matriz-de-pesos.md) — 17 perguntas × 10 trilhas, com cobertura por trilha
+- [Resultados de validação](docs/resultados-validacao.md) — tabela gerada por `tools/benchmark.py`
+- [Arquitetura](docs/arquitetura.svg) — fluxo entre os módulos
+
+---
+
+## 🔁 Evolução em relação à versão anterior
+
+A primeira entrega da disciplina usava **regras SE–ENTÃO binárias no Experta**, com 5 perguntas de múltipla
+escolha e uma única recomendação. Esta versão substitui o motor por inferência ponderada com fatores de
+certeza, base externa em JSON e plano de ação — mas a versão original continua no repositório, em
+[`legacy/`](legacy), com seus testes (executados apenas se o Experta estiver instalado):
+
+```powershell
+python -m pip install -r legacy\requirements-experta.txt
+python -m pytest legacy -q
+```
+
+---
+
+## ⚠️ Limitações
+
+- Os pesos foram calibrados por julgamento de especialista e validados com personas sintéticas; não houve
+  validação estatística com amostra real de estudantes.
+- As faixas salariais são estimativas de mercado, não dados oficiais.
+- O sistema depende da autoavaliação honesta de competências.
+- A recomendação é uma **hipótese de trabalho**, não diagnóstico vocacional nem garantia de empregabilidade.
 
 ---
 

@@ -1,0 +1,30 @@
+{
+  "nome": "Perfil neutro (caso-limite)",
+  "formacao": "graduacao_ti",
+  "experiencia": "nenhuma",
+  "objetivo": "primeiro_emprego",
+  "modalidade": "indiferente",
+  "nivel_alvo": "junior",
+  "horas_semana": 10,
+  "prazo_meses": 6,
+  "respostas": {
+    "q_logica": 3,
+    "q_matematica": 3,
+    "q_codigo": 3,
+    "q_sistemas": 3,
+    "q_visual": 3,
+    "q_usabilidade": 3,
+    "q_dados": 3,
+    "q_eng_dados": 3,
+    "q_infra": 3,
+    "q_automacao": 3,
+    "q_seguranca": 3,
+    "q_qualidade": 3,
+    "q_produto": 3,
+    "q_comunicacao": 3,
+    "q_mobile": 3,
+    "q_nuvem": 3,
+    "q_plantao": 3
+  },
+  "conhecimentos": {}
+}

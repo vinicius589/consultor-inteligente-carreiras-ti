@@ -1,0 +1,37 @@
+{
+  "nome": "Carla (perfil infraestrutura)",
+  "formacao": "ja_ti",
+  "experiencia": "6m_2a",
+  "objetivo": "promocao",
+  "modalidade": "hibrido",
+  "nivel_alvo": "pleno",
+  "horas_semana": 12,
+  "prazo_meses": 12,
+  "respostas": {
+    "q_logica": 4,
+    "q_matematica": 2,
+    "q_codigo": 4,
+    "q_sistemas": 5,
+    "q_visual": 1,
+    "q_usabilidade": 2,
+    "q_dados": 2,
+    "q_eng_dados": 3,
+    "q_infra": 5,
+    "q_automacao": 5,
+    "q_seguranca": 4,
+    "q_qualidade": 3,
+    "q_produto": 1,
+    "q_comunicacao": 3,
+    "q_mobile": 1,
+    "q_nuvem": 4,
+    "q_plantao": 4
+  },
+  "conhecimentos": {
+    "linux": 2,
+    "git": 2,
+    "docker": 2,
+    "bash": 1,
+    "ci_cd": 1,
+    "kubernetes": 1
+  }
+}

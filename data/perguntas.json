@@ -1,0 +1,511 @@
+{
+  "versao": "2.0",
+  "escala": {
+    "min": 1,
+    "max": 5,
+    "rotulos": {
+      "1": "Nada a ver comigo",
+      "2": "Pouco",
+      "3": "Neutro",
+      "4": "Bastante",
+      "5": "Totalmente a ver comigo"
+    }
+  },
+  "etapas": [
+    {
+      "id": "perfil",
+      "titulo": "Passo 1 · Perfil pessoal",
+      "subtitulo": "Contexto rápido para calibrar o plano de ação. Nada aqui muda o ranking sozinho.",
+      "campos": [
+        {
+          "id": "nome",
+          "tipo": "texto",
+          "rotulo": "Como podemos te chamar?",
+          "padrao": "Estudante"
+        },
+        {
+          "id": "formacao",
+          "tipo": "selecao",
+          "rotulo": "Onde você está hoje?",
+          "opcoes": [
+            {
+              "valor": "graduacao_ti",
+              "rotulo": "Cursando graduação em TI"
+            },
+            {
+              "valor": "graduacao_outra",
+              "rotulo": "Cursando outra área"
+            },
+            {
+              "valor": "autodidata",
+              "rotulo": "Estudando por conta própria"
+            },
+            {
+              "valor": "transicao",
+              "rotulo": "Trabalho em outra área e quero migrar"
+            },
+            {
+              "valor": "ja_ti",
+              "rotulo": "Já trabalho em TI"
+            }
+          ]
+        },
+        {
+          "id": "experiencia",
+          "tipo": "selecao",
+          "rotulo": "Há quanto tempo estuda ou pratica tecnologia?",
+          "opcoes": [
+            {
+              "valor": "nenhuma",
+              "rotulo": "Ainda não comecei"
+            },
+            {
+              "valor": "ate_6m",
+              "rotulo": "Menos de 6 meses"
+            },
+            {
+              "valor": "6m_2a",
+              "rotulo": "Entre 6 meses e 2 anos"
+            },
+            {
+              "valor": "mais_2a",
+              "rotulo": "Mais de 2 anos"
+            }
+          ]
+        },
+        {
+          "id": "horas_semana",
+          "tipo": "selecao",
+          "rotulo": "Horas por semana disponíveis para estudar",
+          "opcoes": [
+            {
+              "valor": 5,
+              "rotulo": "Até 5 horas"
+            },
+            {
+              "valor": 10,
+              "rotulo": "5 a 10 horas"
+            },
+            {
+              "valor": 20,
+              "rotulo": "10 a 20 horas"
+            },
+            {
+              "valor": 30,
+              "rotulo": "Mais de 20 horas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afinidades",
+      "titulo": "Passo 2 · Afinidades técnicas",
+      "subtitulo": "Não existe resposta errada. Marque o quanto cada frase tem a ver com você.",
+      "perguntas": [
+        {
+          "id": "q_logica",
+          "dimensao": "logica",
+          "eixo": "programacao",
+          "texto": "Resolver problemas de lógica, depurar erros e insistir até a solução aparecer me dá satisfação.",
+          "ajuda": "Pense em como você reage a um bug difícil: curiosidade ou irritação?",
+          "pesos": {
+            "backend": 0.95,
+            "frontend": 0.45,
+            "dados_ml": 0.55,
+            "eng_dados": 0.5,
+            "seguranca": 0.5,
+            "devops": 0.45,
+            "cloud": 0.35,
+            "mobile": 0.5,
+            "qa": 0.65,
+            "produto": 0.15
+          }
+        },
+        {
+          "id": "q_matematica",
+          "dimensao": "matematica",
+          "eixo": "dados",
+          "texto": "Tenho boa afinidade com matemática, estatística e raciocínio quantitativo.",
+          "ajuda": "Não é sobre nota na faculdade, e sim sobre conforto com números.",
+          "pesos": {
+            "backend": 0.2,
+            "frontend": -0.2,
+            "dados_ml": 1.0,
+            "eng_dados": 0.3,
+            "seguranca": 0.25,
+            "devops": 0.05,
+            "cloud": 0.05,
+            "qa": 0.1
+          }
+        },
+        {
+          "id": "q_codigo",
+          "dimensao": "codigo",
+          "eixo": "programacao",
+          "texto": "Gosto de escrever código e ver uma funcionalidade funcionando do início ao fim.",
+          "ajuda": "Considere também pequenos scripts e automações do dia a dia.",
+          "pesos": {
+            "backend": 1.0,
+            "frontend": 0.85,
+            "dados_ml": 0.55,
+            "eng_dados": 0.55,
+            "seguranca": 0.3,
+            "devops": 0.5,
+            "cloud": 0.25,
+            "mobile": 0.85,
+            "qa": 0.45,
+            "produto": -0.25
+          }
+        },
+        {
+          "id": "q_sistemas",
+          "dimensao": "sistemas",
+          "eixo": "programacao",
+          "texto": "Tenho curiosidade sobre como APIs, bancos, filas e caches se integram em um sistema em produção.",
+          "ajuda": "Pense na curiosidade de entender o que acontece 'atrás' de um app.",
+          "pesos": {
+            "backend": 0.72,
+            "frontend": 0.18,
+            "dados_ml": 0.18,
+            "eng_dados": 0.36,
+            "seguranca": 0.45,
+            "devops": 0.54,
+            "cloud": 0.45,
+            "mobile": 0.225,
+            "qa": 0.27
+          }
+        },
+        {
+          "id": "q_visual",
+          "dimensao": "visual",
+          "eixo": "visual",
+          "texto": "Sinto prazer em escolher cores, tipografia e organizar telas de forma agradável.",
+          "ajuda": "Vale design de apresentação, redes sociais ou interfaces.",
+          "pesos": {
+            "frontend": 1.0,
+            "dados_ml": 0.1,
+            "eng_dados": -0.1,
+            "seguranca": -0.25,
+            "devops": -0.2,
+            "cloud": -0.25,
+            "mobile": 0.45,
+            "qa": 0.05,
+            "produto": 0.25
+          }
+        },
+        {
+          "id": "q_usabilidade",
+          "dimensao": "usabilidade",
+          "eixo": "visual",
+          "texto": "Costumo perceber problemas de usabilidade e fico pensando em como melhorar a experiência da pessoa.",
+          "ajuda": "Observar alguém travando em um formulário conta como evidência.",
+          "pesos": {
+            "frontend": 0.95,
+            "seguranca": -0.1,
+            "devops": -0.1,
+            "cloud": -0.1,
+            "mobile": 0.4,
+            "qa": 0.2,
+            "produto": 0.55
+          }
+        },
+        {
+          "id": "q_dados",
+          "dimensao": "dados",
+          "eixo": "dados",
+          "texto": "Gosto de explorar bases de dados, montar gráficos e tirar conclusões a partir de números.",
+          "ajuda": "Planilhas, indicadores e relatórios também são sinais.",
+          "pesos": {
+            "backend": 0.25,
+            "frontend": 0.1,
+            "dados_ml": 1.0,
+            "eng_dados": 0.8,
+            "seguranca": 0.25,
+            "devops": 0.15,
+            "cloud": 0.1,
+            "qa": 0.15,
+            "produto": 0.35
+          }
+        },
+        {
+          "id": "q_eng_dados",
+          "dimensao": "eng_dados",
+          "eixo": "dados",
+          "texto": "Me atrai construir processos que coletam, limpam e organizam dados automaticamente.",
+          "ajuda": "Gosta de deixar o processo repetível e confiável?",
+          "pesos": {
+            "backend": 0.2,
+            "dados_ml": 0.35,
+            "eng_dados": 1.0,
+            "seguranca": 0.05,
+            "devops": 0.15,
+            "cloud": 0.1,
+            "mobile": -0.1,
+            "produto": -0.05
+          }
+        },
+        {
+          "id": "q_infra",
+          "dimensao": "infra",
+          "eixo": "infra",
+          "texto": "Tenho paciência para configurar servidores, redes, containers e ambientes de desenvolvimento.",
+          "ajuda": "Terminal, máquinas virtuais e configuração não te assustam?",
+          "pesos": {
+            "backend": 0.3,
+            "frontend": -0.15,
+            "dados_ml": 0.1,
+            "eng_dados": 0.45,
+            "seguranca": 0.7,
+            "devops": 1.0,
+            "cloud": 0.85,
+            "mobile": -0.1,
+            "qa": 0.2,
+            "produto": -0.25
+          }
+        },
+        {
+          "id": "q_automacao",
+          "dimensao": "automacao",
+          "eixo": "infra",
+          "texto": "Prefiro investir tempo automatizando uma tarefa a repeti-la manualmente todos os dias.",
+          "ajuda": "Prefere gastar 2 horas criando um script a repetir a tarefa 10 vezes?",
+          "pesos": {
+            "backend": 0.135,
+            "dados_ml": 0.09,
+            "eng_dados": 0.495,
+            "seguranca": 0.27,
+            "devops": 0.9,
+            "cloud": 0.405,
+            "qa": 0.405
+          }
+        },
+        {
+          "id": "q_seguranca",
+          "dimensao": "seguranca",
+          "eixo": "seguranca",
+          "texto": "Me interesso por vulnerabilidades, ataques reais e mecanismos de defesa.",
+          "ajuda": "CTF, notícias de vazamento e hacking ético contam.",
+          "pesos": {
+            "backend": 0.15,
+            "frontend": -0.05,
+            "dados_ml": 0.05,
+            "eng_dados": 0.15,
+            "seguranca": 1.0,
+            "devops": 0.3,
+            "cloud": 0.3,
+            "qa": 0.15,
+            "produto": -0.05
+          }
+        },
+        {
+          "id": "q_qualidade",
+          "dimensao": "qualidade",
+          "eixo": "qualidade",
+          "texto": "Gosto de testar cenários, encontrar defeitos e garantir que nada quebre em produção.",
+          "ajuda": "Você é a pessoa que percebe o botão desalinhado e o caso não previsto?",
+          "pesos": {
+            "backend": 0.3,
+            "frontend": 0.3,
+            "dados_ml": 0.1,
+            "eng_dados": 0.35,
+            "seguranca": 0.2,
+            "devops": 0.25,
+            "cloud": 0.15,
+            "mobile": 0.3,
+            "qa": 1.0
+          }
+        },
+        {
+          "id": "q_produto",
+          "dimensao": "produto",
+          "eixo": "produto",
+          "texto": "Me interessa decidir o que será construído, equilibrando negócio, usuários e esforço técnico.",
+          "ajuda": "Gosta de decidir prioridades e justificar escolhas?",
+          "pesos": {
+            "frontend": 0.15,
+            "dados_ml": 0.1,
+            "devops": -0.05,
+            "cloud": 0.15,
+            "mobile": 0.1,
+            "qa": 0.1,
+            "produto": 1.0
+          }
+        },
+        {
+          "id": "q_comunicacao",
+          "dimensao": "comunicacao",
+          "eixo": "produto",
+          "texto": "Me sinto confortável apresentando ideias, negociando prazos e alinhando com outras áreas.",
+          "ajuda": "Reuniões, apresentações e negociação fazem parte da rotina.",
+          "pesos": {
+            "backend": 0.05,
+            "frontend": 0.3,
+            "dados_ml": 0.05,
+            "eng_dados": 0.05,
+            "seguranca": 0.15,
+            "devops": 0.1,
+            "cloud": 0.2,
+            "mobile": 0.1,
+            "qa": 0.25,
+            "produto": 0.9
+          }
+        },
+        {
+          "id": "q_mobile",
+          "dimensao": "mobile",
+          "eixo": "mobile",
+          "texto": "Tenho interesse específico em aplicativos de celular e nas restrições dessas plataformas.",
+          "ajuda": "Interesse por apps, lojas e dispositivos.",
+          "pesos": {
+            "frontend": 0.27,
+            "dados_ml": -0.135,
+            "eng_dados": -0.18,
+            "devops": -0.135,
+            "cloud": -0.135,
+            "mobile": 0.9
+          }
+        },
+        {
+          "id": "q_nuvem",
+          "dimensao": "nuvem",
+          "eixo": "infra",
+          "texto": "Me interessa desenhar arquiteturas escaláveis e escolher serviços de nuvem.",
+          "ajuda": "Interesse por custo, escala e serviços gerenciados.",
+          "pesos": {
+            "backend": 0.09,
+            "dados_ml": 0.09,
+            "eng_dados": 0.315,
+            "seguranca": 0.225,
+            "devops": 0.495,
+            "cloud": 0.9
+          }
+        },
+        {
+          "id": "q_plantao",
+          "dimensao": "plantao",
+          "eixo": "infra",
+          "texto": "Não me incomodo em ter responsabilidade por sistemas críticos, com plantões e incidentes.",
+          "ajuda": "Sistemas críticos exigem disponibilidade e resposta rápida.",
+          "pesos": {
+            "frontend": -0.08,
+            "eng_dados": 0.08,
+            "seguranca": 0.32,
+            "devops": 0.36,
+            "cloud": 0.2,
+            "produto": -0.12
+          }
+        }
+      ]
+    },
+    {
+      "id": "objetivos",
+      "titulo": "Passo 3 · Objetivos e conhecimentos",
+      "subtitulo": "As respostas aqui ajustam o ranking e definem o nível alvo do plano de estudos.",
+      "campos": [
+        {
+          "id": "objetivo",
+          "tipo": "selecao",
+          "rotulo": "Qual é o seu objetivo principal agora?",
+          "opcoes": [
+            {
+              "valor": "primeiro_emprego",
+              "rotulo": "Conseguir o primeiro emprego em TI"
+            },
+            {
+              "valor": "transicao",
+              "rotulo": "Migrar de área para TI"
+            },
+            {
+              "valor": "promocao",
+              "rotulo": "Evoluir de cargo dentro da área"
+            },
+            {
+              "valor": "especializacao",
+              "rotulo": "Aprofundar em uma especialidade técnica"
+            },
+            {
+              "valor": "freelance",
+              "rotulo": "Trabalhar como freelancer / autônomo"
+            }
+          ]
+        },
+        {
+          "id": "nivel_alvo",
+          "tipo": "selecao",
+          "rotulo": "Qual nível você quer atingir no plano?",
+          "opcoes": [
+            {
+              "valor": "estagio",
+              "rotulo": "Estágio"
+            },
+            {
+              "valor": "junior",
+              "rotulo": "Júnior"
+            },
+            {
+              "valor": "pleno",
+              "rotulo": "Pleno"
+            }
+          ]
+        },
+        {
+          "id": "prazo",
+          "tipo": "selecao",
+          "rotulo": "Em quanto tempo quer estar pronto?",
+          "opcoes": [
+            {
+              "valor": 3,
+              "rotulo": "3 meses"
+            },
+            {
+              "valor": 6,
+              "rotulo": "6 meses"
+            },
+            {
+              "valor": 12,
+              "rotulo": "12 meses"
+            },
+            {
+              "valor": 24,
+              "rotulo": "Sem pressa"
+            }
+          ]
+        },
+        {
+          "id": "modalidade",
+          "tipo": "selecao",
+          "rotulo": "Preferência de trabalho",
+          "opcoes": [
+            {
+              "valor": "remoto",
+              "rotulo": "Remoto"
+            },
+            {
+              "valor": "hibrido",
+              "rotulo": "Híbrido"
+            },
+            {
+              "valor": "presencial",
+              "rotulo": "Presencial"
+            },
+            {
+              "valor": "indiferente",
+              "rotulo": "Indiferente"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "autoavaliacao": {
+    "rotulo": "Seu conhecimento atual",
+    "descricao": "0 = nunca usei · 1 = já estudei/usei em exercícios · 2 = já fiz projetos · 3 = já usei profissionalmente",
+    "escala": {
+      "0": "Nunca usei",
+      "1": "Básico",
+      "2": "Intermediário",
+      "3": "Avançado"
+    }
+  }
+}

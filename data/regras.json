@@ -1,0 +1,463 @@
+{
+  "versao": "2.0",
+  "calibracao": {
+    "expoente": 0.7,
+    "teto": 0.97,
+    "limiar_empate": 2.5,
+    "confianca_alta": 0.62,
+    "confianca_media": 0.45,
+    "max_justificativas": 5,
+    "descricao": "A forca bruta (0..1) e convertida em percentual por teto * forca^expoente. O expoente 0.7 expande a parte alta da escala: 1.0 tende ao teto de 97% e 0.5 (perfil neutro) fica em ~60%."
+  },
+  "penalidades": [
+    {
+      "id": "pen_produto_sem_pessoas",
+      "trilha": "produto",
+      "quando": {
+        "q_comunicacao": {
+          "max": 2
+        }
+      },
+      "fator": 0.62,
+      "justificativa": "Produto depende de alinhar e negociar com pessoas; você indicou pouca disposição para isso."
+    },
+    {
+      "id": "pen_produto_sem_produto",
+      "trilha": "produto",
+      "quando": {
+        "q_produto": {
+          "max": 2
+        }
+      },
+      "fator": 0.7,
+      "justificativa": "Você demonstrou pouco interesse em decidir prioridades e escopo, que é o centro da função."
+    },
+    {
+      "id": "pen_frontend_sem_visual",
+      "trilha": "frontend",
+      "quando": {
+        "q_visual": {
+          "max": 2
+        }
+      },
+      "fator": 0.68,
+      "justificativa": "Front-end exige repertório visual; sua afinidade com design ficou baixa."
+    },
+    {
+      "id": "pen_frontend_sem_usabilidade",
+      "trilha": "frontend",
+      "quando": {
+        "q_usabilidade": {
+          "max": 2
+        }
+      },
+      "fator": 0.8,
+      "justificativa": "Pouco interesse em experiência do usuário reduz a aderência a front-end/UX."
+    },
+    {
+      "id": "pen_backend_sem_codigo",
+      "trilha": "backend",
+      "quando": {
+        "q_codigo": {
+          "max": 2
+        }
+      },
+      "fator": 0.7,
+      "justificativa": "Back-end é essencialmente construção de software; escrever código não apareceu como afinidade."
+    },
+    {
+      "id": "pen_backend_sem_logica",
+      "trilha": "backend",
+      "quando": {
+        "q_logica": {
+          "max": 2
+        }
+      },
+      "fator": 0.72,
+      "justificativa": "Depuração e raciocínio lógico são parte diária da função."
+    },
+    {
+      "id": "pen_dados_sem_matematica",
+      "trilha": "dados_ml",
+      "quando": {
+        "q_matematica": {
+          "max": 2
+        }
+      },
+      "fator": 0.65,
+      "justificativa": "Ciência de dados exige base quantitativa; sua afinidade com matemática ficou baixa."
+    },
+    {
+      "id": "pen_dados_sem_dados",
+      "trilha": "dados_ml",
+      "quando": {
+        "q_dados": {
+          "max": 2
+        }
+      },
+      "fator": 0.7,
+      "justificativa": "Pouco interesse em explorar dados reduz a aderência à trilha."
+    },
+    {
+      "id": "pen_engdados_sem_pipeline",
+      "trilha": "eng_dados",
+      "quando": {
+        "q_eng_dados": {
+          "max": 2
+        }
+      },
+      "fator": 0.7,
+      "justificativa": "Pipelines de dados são o núcleo da engenharia de dados."
+    },
+    {
+      "id": "pen_seg_sem_seguranca",
+      "trilha": "seguranca",
+      "quando": {
+        "q_seguranca": {
+          "max": 2
+        }
+      },
+      "fator": 0.65,
+      "justificativa": "Curiosidade por ameaças e defesa é pré-requisito para segurança."
+    },
+    {
+      "id": "pen_devops_sem_infra",
+      "trilha": "devops",
+      "quando": {
+        "q_infra": {
+          "max": 2
+        }
+      },
+      "fator": 0.66,
+      "justificativa": "DevOps/SRE trabalha com infraestrutura todos os dias."
+    },
+    {
+      "id": "pen_devops_sem_plantao",
+      "trilha": "devops",
+      "quando": {
+        "q_plantao": {
+          "max": 2
+        }
+      },
+      "fator": 0.82,
+      "justificativa": "A função inclui responsabilidade por sistemas críticos e incidentes."
+    },
+    {
+      "id": "pen_cloud_sem_nuvem",
+      "trilha": "cloud",
+      "quando": {
+        "q_nuvem": {
+          "max": 2
+        }
+      },
+      "fator": 0.7,
+      "justificativa": "Sem interesse por arquitetura de nuvem, a trilha perde sentido."
+    },
+    {
+      "id": "pen_cloud_sem_infra",
+      "trilha": "cloud",
+      "quando": {
+        "q_infra": {
+          "max": 2
+        }
+      },
+      "fator": 0.75,
+      "justificativa": "Arquitetura em nuvem pressupõe conforto com infraestrutura."
+    },
+    {
+      "id": "pen_mobile_sem_mobile",
+      "trilha": "mobile",
+      "quando": {
+        "q_mobile": {
+          "max": 2
+        }
+      },
+      "fator": 0.68,
+      "justificativa": "Desenvolvimento mobile exige interesse específico pela plataforma."
+    },
+    {
+      "id": "pen_qa_sem_detalhe",
+      "trilha": "qa",
+      "quando": {
+        "q_qualidade": {
+          "max": 2
+        }
+      },
+      "fator": 0.68,
+      "justificativa": "QA depende de gosto por testar, detalhar e encontrar falhas."
+    }
+  ],
+  "bonus": [
+    {
+      "id": "bon_devops_completo",
+      "trilha": "devops",
+      "quando": {
+        "q_infra": {
+          "min": 4
+        },
+        "q_automacao": {
+          "min": 4
+        }
+      },
+      "fator": 1.08,
+      "justificativa": "Infraestrutura + automação com afinidade alta formam o perfil clássico de DevOps/SRE."
+    },
+    {
+      "id": "bon_cloud_completo",
+      "trilha": "cloud",
+      "quando": {
+        "q_nuvem": {
+          "min": 4
+        },
+        "q_infra": {
+          "min": 4
+        }
+      },
+      "fator": 1.08,
+      "justificativa": "Interesse por nuvem somado a conforto com infraestrutura indica perfil de arquitetura."
+    },
+    {
+      "id": "bon_dados_completo",
+      "trilha": "dados_ml",
+      "quando": {
+        "q_matematica": {
+          "min": 4
+        },
+        "q_dados": {
+          "min": 4
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Matemática e análise de dados juntas são a base da ciência de dados."
+    },
+    {
+      "id": "bon_backend_completo",
+      "trilha": "backend",
+      "quando": {
+        "q_logica": {
+          "min": 4
+        },
+        "q_codigo": {
+          "min": 4
+        }
+      },
+      "fator": 1.06,
+      "justificativa": "Lógica e prazer em programar apontam para construção de sistemas."
+    },
+    {
+      "id": "bon_frontend_completo",
+      "trilha": "frontend",
+      "quando": {
+        "q_visual": {
+          "min": 4
+        },
+        "q_usabilidade": {
+          "min": 4
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Design visual e preocupação com usabilidade são a dupla central de front-end/UX."
+    },
+    {
+      "id": "bon_produto_completo",
+      "trilha": "produto",
+      "quando": {
+        "q_produto": {
+          "min": 4
+        },
+        "q_comunicacao": {
+          "min": 4
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Interesse em produto com boa comunicação é o perfil esperado de PM."
+    },
+    {
+      "id": "bon_qa_completo",
+      "trilha": "qa",
+      "quando": {
+        "q_qualidade": {
+          "min": 4
+        },
+        "q_logica": {
+          "min": 4
+        }
+      },
+      "fator": 1.06,
+      "justificativa": "Atenção a detalhes com raciocínio lógico forma um bom engenheiro de qualidade."
+    },
+    {
+      "id": "bon_seg_completo",
+      "trilha": "seguranca",
+      "quando": {
+        "q_seguranca": {
+          "min": 4
+        },
+        "q_infra": {
+          "min": 3
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Segurança com base de infraestrutura é a combinação mais contratada na área."
+    },
+    {
+      "id": "bon_mobile_completo",
+      "trilha": "mobile",
+      "quando": {
+        "q_mobile": {
+          "min": 4
+        },
+        "q_codigo": {
+          "min": 4
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Interesse por apps e por programar sustenta a trilha mobile."
+    },
+    {
+      "id": "bon_engdados_completo",
+      "trilha": "eng_dados",
+      "quando": {
+        "q_eng_dados": {
+          "min": 4
+        },
+        "q_dados": {
+          "min": 3
+        }
+      },
+      "fator": 1.07,
+      "justificativa": "Gosto por pipelines e por dados aponta para engenharia de dados."
+    }
+  ],
+  "ajustes_objetivo": {
+    "primeiro_emprego": {
+      "backend": 1.024,
+      "frontend": 1.024,
+      "qa": 1.04,
+      "mobile": 1.012,
+      "dados_ml": 0.976,
+      "eng_dados": 0.992,
+      "seguranca": 0.988,
+      "devops": 0.968,
+      "cloud": 0.96,
+      "produto": 0.952
+    },
+    "transicao": {
+      "backend": 1.008,
+      "frontend": 1.016,
+      "qa": 1.032,
+      "dados_ml": 0.984,
+      "eng_dados": 0.992,
+      "seguranca": 0.992,
+      "devops": 0.976,
+      "cloud": 0.968,
+      "mobile": 1.0,
+      "produto": 1.0
+    },
+    "promocao": {
+      "backend": 1.008,
+      "frontend": 1.008,
+      "qa": 1.0,
+      "dados_ml": 1.0,
+      "eng_dados": 1.008,
+      "seguranca": 1.008,
+      "devops": 1.016,
+      "cloud": 1.016,
+      "mobile": 0.992,
+      "produto": 1.008
+    },
+    "especializacao": {
+      "backend": 1.0,
+      "frontend": 0.992,
+      "qa": 0.98,
+      "dados_ml": 1.032,
+      "eng_dados": 1.032,
+      "seguranca": 1.024,
+      "devops": 1.024,
+      "cloud": 1.032,
+      "mobile": 0.984,
+      "produto": 0.98
+    },
+    "freelance": {
+      "backend": 1.0,
+      "frontend": 1.032,
+      "qa": 1.008,
+      "dados_ml": 0.98,
+      "eng_dados": 0.976,
+      "seguranca": 0.984,
+      "devops": 0.992,
+      "cloud": 0.984,
+      "mobile": 1.032,
+      "produto": 0.984
+    }
+  },
+  "ajustes_modalidade": {
+    "remoto": {
+      "backend": 1.015,
+      "frontend": 1.02,
+      "dados_ml": 1.01,
+      "eng_dados": 1.01,
+      "seguranca": 1.0,
+      "devops": 1.01,
+      "cloud": 1.005,
+      "mobile": 1.0,
+      "qa": 1.01,
+      "produto": 1.0
+    },
+    "hibrido": {
+      "backend": 1.005,
+      "frontend": 1.0,
+      "dados_ml": 1.005,
+      "eng_dados": 1.005,
+      "seguranca": 1.005,
+      "devops": 1.005,
+      "cloud": 1.005,
+      "mobile": 1.0,
+      "qa": 1.0,
+      "produto": 1.005
+    },
+    "presencial": {
+      "backend": 0.995,
+      "frontend": 0.99,
+      "dados_ml": 0.995,
+      "eng_dados": 0.995,
+      "seguranca": 1.01,
+      "devops": 1.0,
+      "cloud": 1.0,
+      "mobile": 0.995,
+      "qa": 0.995,
+      "produto": 1.0
+    },
+    "indiferente": {
+      "backend": 1.0,
+      "frontend": 1.0,
+      "dados_ml": 1.0,
+      "eng_dados": 1.0,
+      "seguranca": 1.0,
+      "devops": 1.0,
+      "cloud": 1.0,
+      "mobile": 1.0,
+      "qa": 1.0,
+      "produto": 1.0
+    }
+  },
+  "niveis": {
+    "estagio": {
+      "rotulo": "Estágio",
+      "descricao": "Aprendiz em formação, com supervisão próxima."
+    },
+    "junior": {
+      "rotulo": "Júnior",
+      "descricao": "Executa tarefas com autonomia parcial e apoio do time."
+    },
+    "pleno": {
+      "rotulo": "Pleno",
+      "descricao": "Resolve problemas sozinho e apoia pessoas menos experientes."
+    }
+  },
+  "mensagens": {
+    "empate": "As duas primeiras trilhas ficaram tecnicamente empatadas. O sistema não força uma escolha: use o desempate sugerido para decidir com mais informação.",
+    "confianca_baixa": "Suas respostas ficaram próximas do neutro em muitos pontos, então o resultado deve ser lido como hipótese inicial, não como conclusão.",
+    "confianca_alta": "O perfil apresentou sinais consistentes: as duas primeiras trilhas ficaram bem separadas."
+  }
+}

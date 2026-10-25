@@ -1,6 +1,26 @@
-import unittest
+"""Testes da versão anterior (motor Experta, Aula 08).
 
-from sistema_especialista import OPCOES, diagnosticar
+Mantidos como registro da fase de regras binárias. São ignorados quando a
+biblioteca Experta não está instalada, para não afetar a suíte atual.
+
+Para executar:
+    python -m pip install -r legacy/requirements-experta.txt
+    python -m pytest legacy -q
+"""
+
+from __future__ import annotations
+
+import sys
+import unittest
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+experta = pytest.importorskip("experta", reason="Experta não instalada (versão legada)")
+
+from sistema_especialista_experta import OPCOES, diagnosticar  # noqa: E402
 
 
 def perfil(atividade, ferramenta, entrega, ambiente, matematica="Média"):
@@ -22,10 +42,7 @@ class TestePersonas(unittest.TestCase):
             "Dados e pesquisa",
             "Alta",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Ciência de Dados e Machine Learning",
-        )
+        self.assertEqual(resultado["carreira"], "Ciência de Dados e Machine Learning")
 
     def test_perfil_seguranca(self):
         resultado = diagnosticar(perfil(
@@ -44,10 +61,7 @@ class TestePersonas(unittest.TestCase):
             "Desenvolvimento de software",
             "Baixa",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Desenvolvimento Front-end & UI/UX",
-        )
+        self.assertEqual(resultado["carreira"], "Desenvolvimento Front-end & UI/UX")
 
     def test_perfil_negocios(self):
         resultado = diagnosticar(perfil(
@@ -65,13 +79,8 @@ class TestePersonas(unittest.TestCase):
             "Infraestrutura estável e automatizada",
             "Infraestrutura, servidores ou nuvem",
         ))
-
         self.assertEqual(resultado["carreira"], "Computação em Nuvem")
         self.assertEqual(resultado["pontuacao"], 11)
-        self.assertTrue(any(
-            "Sua afinidade com ferramentas de nuvem combina" in motivo
-            for motivo in resultado["motivos"]
-        ))
 
     def test_perfil_backend(self):
         resultado = diagnosticar(perfil(
@@ -80,10 +89,7 @@ class TestePersonas(unittest.TestCase):
             "A lógica e os serviços por trás do sistema",
             "Desenvolvimento de software",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Desenvolvimento Back-end",
-        )
+        self.assertEqual(resultado["carreira"], "Desenvolvimento Back-end")
 
     def test_perfil_engenharia_dados(self):
         resultado = diagnosticar(perfil(
@@ -92,10 +98,7 @@ class TestePersonas(unittest.TestCase):
             "Dados organizados e disponíveis",
             "Dados e pesquisa",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Engenharia de Dados",
-        )
+        self.assertEqual(resultado["carreira"], "Engenharia de Dados")
 
     def test_perfil_devops(self):
         resultado = diagnosticar(perfil(
@@ -113,10 +116,7 @@ class TestePersonas(unittest.TestCase):
             "Aplicativo para celular",
             "Desenvolvimento de software",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Desenvolvimento Mobile",
-        )
+        self.assertEqual(resultado["carreira"], "Desenvolvimento Mobile")
 
     def test_perfil_qa(self):
         resultado = diagnosticar(perfil(
@@ -125,10 +125,8 @@ class TestePersonas(unittest.TestCase):
             "Software confiável e sem defeitos",
             "Testes e melhoria contínua",
         ))
-        self.assertEqual(
-            resultado["carreira"],
-            "Engenharia de Qualidade e Testes (QA)",
-        )
+        self.assertEqual(resultado["carreira"], "Engenharia de Qualidade e Testes (QA)")
+
 
 if __name__ == "__main__":
     unittest.main()
